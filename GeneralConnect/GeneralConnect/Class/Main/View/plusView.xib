@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5oN-BH-CJr">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发动态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEv-ss-D08">
+                    <rect key="frame" x="0.0" y="166" width="300" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="QlG-RS-qTT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgs-0k-QMt">
+                    <rect key="frame" x="108" y="75" width="85" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="dHY-jg-84C"/>
+                        <constraint firstAttribute="width" constant="85" id="ldh-AA-pbe"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="fadongtai.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pEv-ss-D08" firstAttribute="leading" secondItem="5oN-BH-CJr" secondAttribute="leading" id="MWJ-I8-aIs"/>
+                <constraint firstAttribute="trailing" secondItem="pEv-ss-D08" secondAttribute="trailing" id="Rmv-3h-hAe"/>
+                <constraint firstItem="pEv-ss-D08" firstAttribute="top" secondItem="lgs-0k-QMt" secondAttribute="bottom" constant="8" id="Sbb-cn-Xwn"/>
+                <constraint firstItem="lgs-0k-QMt" firstAttribute="centerX" secondItem="5oN-BH-CJr" secondAttribute="centerX" id="Utx-IB-20q"/>
+                <constraint firstItem="pEv-ss-D08" firstAttribute="centerY" secondItem="5oN-BH-CJr" secondAttribute="centerY" constant="26" id="jE6-3i-0Wj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="316" y="436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fadongtai.png" width="125" height="125"/>
+    </resources>
+</document>
