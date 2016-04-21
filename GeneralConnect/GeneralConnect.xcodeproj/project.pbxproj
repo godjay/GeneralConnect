@@ -219,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				AC82D6F51CC48BC800DE5657 /* Controller */,
-				AC82D6F81CC48BC800DE5657 /* Model */,
 				AC82D6F91CC48BC800DE5657 /* View */,
 			);
 			path = Find;
@@ -230,6 +229,7 @@
 			children = (
 				AC82D6F61CC48BC800DE5657 /* FindViewController.h */,
 				AC82D6F71CC48BC800DE5657 /* FindViewController.m */,
+				AC82D6F81CC48BC800DE5657 /* Model */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,7 +238,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = ../Model;
 			sourceTree = "<group>";
 		};
 		AC82D6F91CC48BC800DE5657 /* View */ = {
