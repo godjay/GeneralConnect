@@ -8,14 +8,16 @@
 
 #import "plusView.h"
 
+@interface plusView ()
+- (IBAction)fireBtnAction;
+
+@end
+
 @implementation plusView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+//发动态
+- (IBAction)fireBtnAction {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"fire" object:nil];
 }
-*/
 
 @end

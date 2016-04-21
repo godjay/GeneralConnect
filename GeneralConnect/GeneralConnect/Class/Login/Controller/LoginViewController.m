@@ -27,6 +27,10 @@
 - (void)viewWillAppear:(BOOL)animated{
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -29,12 +29,9 @@
     if (self) {
         self.backgroundColor = [UIColor blackColor];
         UIButton *plus = [UIButton buttonWithType:UIButtonTypeCustom];
-//        [plus setTitle:@"+" forState:UIControlStateNormal];
-//        [plus setBackgroundImage:[UIImage imageNamed:@"38"] forState:UIControlStateNormal];
         [plus setImage:[UIImage imageNamed:@"plus2"] forState:UIControlStateNormal];
         [plus setImage:[UIImage imageNamed:@"plus"] forState:UIControlStateHighlighted];
-        //好6啊这个属性
-        plus.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        plus.imageView.contentMode = UIViewContentModeScaleAspectFit;        //好6啊这个属性
         self.plus = plus;
         plus.bounds = CGRectMake(0, 0, 80, self.frame.size.height + 80);
         [plus addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];

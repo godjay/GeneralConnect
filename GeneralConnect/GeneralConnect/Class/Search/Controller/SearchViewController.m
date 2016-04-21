@@ -1,25 +1,22 @@
 //
-//  FireViewController.m
+//  SearchViewController.m
 //  GeneralConnect
 //
-//  Created by lirenjie on 16/4/19.
+//  Created by lirenjie on 16/4/20.
 //  Copyright © 2016年 lirenjie. All rights reserved.
 //
 
-#import "FireViewController.h"
+#import "SearchViewController.h"
 
-@interface FireViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *myTextView;
+@interface SearchViewController ()
 
 @end
 
-@implementation FireViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"发布动态";
     
-    self.navigationController.navigationBar.translucent = YES;
     //创建导航栏左边按钮
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     leftBtn.frame = CGRectMake(0, 0, 20, 20);
@@ -28,15 +25,17 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = leftItem;
 
+    //创建右边搜索按钮
+    
+    //搜索控件
+    UISearchBar *searchBar = [[UISearchBar alloc] init];
+    searchBar.placeholder = @"搜索红人或通告";
+    self.navigationItem.titleView = searchBar;
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.myTextView endEditing:YES];
+- (void)leftBtnAction{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-//返回
-- (void)leftBtnAction
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 @end

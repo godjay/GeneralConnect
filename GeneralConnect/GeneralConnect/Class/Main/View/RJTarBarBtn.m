@@ -14,7 +14,6 @@
     self = [super initWithFrame:frame];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.titleLabel.font = [UIFont systemFontOfSize:14];
-//    self.titleLabel.textColor = [UIColor colorWithRed:3/255.0 green:203/255.0 blue:255/255.0 alpha:1.0];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
 //    self.imageEdgeInsets = UIEdgeInsetsMake(5, 16, 5, 16);
     return self;

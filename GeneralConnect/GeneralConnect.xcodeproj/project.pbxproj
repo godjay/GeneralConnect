@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC02ECEA1CC71555000156AF /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECE81CC71555000156AF /* pic.png */; };
+		AC02ECEB1CC71555000156AF /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECE91CC71555000156AF /* video.png */; };
+		AC02ECED1CC71567000156AF /* FireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECEC1CC71567000156AF /* FireViewController.xib */; };
+		AC02ECEF1CC7171A000156AF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECEE1CC7171A000156AF /* search.png */; };
+		AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC02ECF11CC7186E000156AF /* SearchViewController.m */; };
+		AC02ECF41CC7186E000156AF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECF21CC7186E000156AF /* SearchViewController.xib */; };
 		AC82D72C1CC48BC800DE5657 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D6F71CC48BC800DE5657 /* FindViewController.m */; };
 		AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7091CC48BC800DE5657 /* RJNavViewController.m */; };
 		AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70B1CC48BC800DE5657 /* RJTabBarController.m */; };
@@ -16,7 +22,6 @@
 		AC82D7321CC48BC800DE5657 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D71B1CC48BC800DE5657 /* MineViewController.m */; };
 		AC82D7331CC48BC800DE5657 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7211CC48BC800DE5657 /* NewViewController.m */; };
 		AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7361CC48BD200DE5657 /* AppDelegate.m */; };
-		AC82D7411CC48CA400DE5657 /* FireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7401CC48CA400DE5657 /* FireViewController.m */; };
 		AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7451CC48FD100DE5657 /* LoginViewController.m */; };
 		AC82D7481CC48FD100DE5657 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC82D7461CC48FD100DE5657 /* LoginViewController.xib */; };
 		AC82D7531CC4950200DE5657 /* log-in-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC82D74C1CC4950200DE5657 /* log-in-2.png */; };
@@ -54,6 +59,7 @@
 		ACA356381CC5E197001F85A0 /* ×.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA356361CC5E197001F85A0 /* ×.png */; };
 		ACA356391CC5E197001F85A0 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA356371CC5E197001F85A0 /* text.png */; };
 		ACA3563B1CC605F4001F85A0 /* x1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACA3563A1CC605F4001F85A0 /* x1.jpg */; };
+		ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3563F1CC61A70001F85A0 /* FireViewController.m */; };
 		ACC537C41CC0C461006859AC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC537C31CC0C461006859AC /* MediaPlayer.framework */; };
 		ACCE77021CBB355E008041F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCE77011CBB355E008041F8 /* main.m */; };
 		ACCE770B1CBB355E008041F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCE77091CBB355E008041F8 /* Main.storyboard */; };
@@ -82,6 +88,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC02ECE81CC71555000156AF /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+		AC02ECE91CC71555000156AF /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		AC02ECEC1CC71567000156AF /* FireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FireViewController.xib; sourceTree = "<group>"; };
+		AC02ECEE1CC7171A000156AF /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		AC02ECF01CC7186E000156AF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		AC02ECF11CC7186E000156AF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		AC02ECF21CC7186E000156AF /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		AC82D6F61CC48BC800DE5657 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		AC82D6F71CC48BC800DE5657 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
 		AC82D7081CC48BC800DE5657 /* RJNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNavViewController.h; sourceTree = "<group>"; };
@@ -100,8 +113,6 @@
 		AC82D7211CC48BC800DE5657 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 		AC82D7351CC48BD200DE5657 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC82D7361CC48BD200DE5657 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AC82D73F1CC48CA400DE5657 /* FireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireViewController.h; sourceTree = "<group>"; };
-		AC82D7401CC48CA400DE5657 /* FireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireViewController.m; sourceTree = "<group>"; };
 		AC82D7441CC48FD100DE5657 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		AC82D7451CC48FD100DE5657 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AC82D7461CC48FD100DE5657 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -143,6 +154,8 @@
 		ACA356361CC5E197001F85A0 /* ×.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "×.png"; path = "../imge/×.png"; sourceTree = "<group>"; };
 		ACA356371CC5E197001F85A0 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text.png; path = ../imge/text.png; sourceTree = "<group>"; };
 		ACA3563A1CC605F4001F85A0 /* x1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = x1.jpg; path = ../imge/x1.jpg; sourceTree = "<group>"; };
+		ACA3563E1CC61A70001F85A0 /* FireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireViewController.h; sourceTree = "<group>"; };
+		ACA3563F1CC61A70001F85A0 /* FireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireViewController.m; sourceTree = "<group>"; };
 		ACC537C31CC0C461006859AC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		ACCE76FD1CBB355E008041F8 /* GeneralConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCE77011CBB355E008041F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -248,8 +261,9 @@
 		AC82D6FB1CC48BC800DE5657 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC82D73F1CC48CA400DE5657 /* FireViewController.h */,
-				AC82D7401CC48CA400DE5657 /* FireViewController.m */,
+				ACA3563E1CC61A70001F85A0 /* FireViewController.h */,
+				ACA3563F1CC61A70001F85A0 /* FireViewController.m */,
+				AC02ECEC1CC71567000156AF /* FireViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -524,6 +538,9 @@
 		AC82D7291CC48BC800DE5657 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AC02ECF01CC7186E000156AF /* SearchViewController.h */,
+				AC02ECF11CC7186E000156AF /* SearchViewController.m */,
+				AC02ECF21CC7186E000156AF /* SearchViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -598,6 +615,9 @@
 		AC82D7701CC4E07800DE5657 /* 按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				AC02ECEE1CC7171A000156AF /* search.png */,
+				AC02ECE81CC71555000156AF /* pic.png */,
+				AC02ECE91CC71555000156AF /* video.png */,
 				ACA356361CC5E197001F85A0 /* ×.png */,
 				ACA3563A1CC605F4001F85A0 /* x1.jpg */,
 				ACA356371CC5E197001F85A0 /* text.png */,
@@ -783,6 +803,7 @@
 				AC82D7901CC4EA3100DE5657 /* news2.png in Resources */,
 				AC82D78C1CC4EA1000DE5657 /* mine2.png in Resources */,
 				ACCE77101CBB355E008041F8 /* LaunchScreen.storyboard in Resources */,
+				AC02ECEB1CC71555000156AF /* video.png in Resources */,
 				ACA3562B1CC5C77A001F85A0 /* plus.png in Resources */,
 				AC82D7841CC4E9EB00DE5657 /* find2.png in Resources */,
 				ACA356351CC5D1C3001F85A0 /* plusView.xib in Resources */,
@@ -798,6 +819,8 @@
 				ACA3562F1CC5CDCE001F85A0 /* fadongtai.png in Resources */,
 				AC82D78B1CC4EA1000DE5657 /* mine.png in Resources */,
 				AC82D7541CC4950200DE5657 /* log-in.png in Resources */,
+				AC02ECF41CC7186E000156AF /* SearchViewController.xib in Resources */,
+				AC02ECED1CC71567000156AF /* FireViewController.xib in Resources */,
 				AC82D7601CC4CABD00DE5657 /* back.png in Resources */,
 				ACA356391CC5E197001F85A0 /* text.png in Resources */,
 				ACCE77431CBB56C8008041F8 /* Images.xcassets in Resources */,
@@ -810,11 +833,13 @@
 				ACA356271CC5C1D4001F85A0 /* wanghongquan.png in Resources */,
 				ACA356281CC5C1D4001F85A0 /* wanghongquan2.png in Resources */,
 				AC82D76F1CC4DB8000DE5657 /* nav.png in Resources */,
+				AC02ECEF1CC7171A000156AF /* search.png in Resources */,
 				AC82D76B1CC4D49D00DE5657 /* eye.png in Resources */,
 				AC82D7551CC4950200DE5657 /* logo.png in Resources */,
 				ACA3562C1CC5C77A001F85A0 /* plus2.png in Resources */,
 				AC9C35B41CC0EFE400246A11 /* 风骚之神.mp4 in Resources */,
 				AC82D7481CC48FD100DE5657 /* LoginViewController.xib in Resources */,
+				AC02ECEA1CC71555000156AF /* pic.png in Resources */,
 				ACCE770B1CBB355E008041F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,9 +870,10 @@
 				AC82D7311CC48BC800DE5657 /* MessageViewController.m in Sources */,
 				AC82D7321CC48BC800DE5657 /* MineViewController.m in Sources */,
 				AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */,
-				AC82D7411CC48CA400DE5657 /* FireViewController.m in Sources */,
 				AC82D7661CC4CF7000DE5657 /* ForgetViewController.m in Sources */,
+				AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */,
 				AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */,
+				ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */,
 				AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */,
 				AC82D72C1CC48BC800DE5657 /* FindViewController.m in Sources */,
 				AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */,

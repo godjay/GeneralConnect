@@ -14,6 +14,7 @@
 #import "RJTarBar.h"
 #import "RJNavViewController.h"
 #import "plusView.h"
+#import "FireViewController.h"
 
 @interface RJTabBarController ()
 @property (weak,nonatomic)RJTarBar *customTabar;
@@ -36,6 +37,7 @@
     //接收通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chooseController:) name:@"indexChange" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentTextPlus) name:@"presentPlus" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fireNew) name:@"fire" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -54,8 +56,6 @@
     
     plusView *myplusView = [[NSBundle mainBundle] loadNibNamed:@"plusView" owner:self options:nil].lastObject;
     myplusView.frame = CGRectMake(0, self.view.bounds.size.height, self.view.frame.size.width, 200);
-//    UIView *plusView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, self.view.frame.size.width, 200)];
-//    plusView.backgroundColor = [UIColor whiteColor];
     [self.view insertSubview:myplusView aboveSubview:self.maskView];
     self.plusView = myplusView;
 }
@@ -63,11 +63,10 @@
 //遮罩视图
 - (void)setupMaskView{
     UIView *maskView = [[UIView alloc] initWithFrame:self.view.frame];
-//    UIView *maskView = [[UIView alloc] init];
-//    maskView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.tabBar.frame.size.height);
     self.tabBarController.view.userInteractionEnabled = NO;
     maskView.backgroundColor = [UIColor whiteColor];
-//    maskView.alpha = 0.5;
+//    [self.view addSubview:maskView];
+//    [self.view insertSubview:maskView aboveSubview:self.tabBar];
     [self.view addSubview:maskView];
     maskView.hidden = YES;
     self.maskView = maskView;
@@ -115,6 +114,8 @@
     [self.customTabar addTarBarButtonWithItems:childController.tabBarItem];
 }
 
+/*通知方法*/
+
 //动画弹出加号按钮视图
 - (void)presentTextPlus{
     self.maskView.hidden = NO;
@@ -126,6 +127,14 @@
 //切换控制器
 - (void)chooseController:(NSNotification *)not{
     self.selectedIndex = [not.object integerValue];
+}
+
+//跳转发布控制器
+- (void)fireNew{
+    [self maskViewClick];
+    FireViewController *fireVc = [[FireViewController alloc] init];
+    RJNavViewController *nav = [[RJNavViewController alloc] initWithRootViewController:fireVc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 //隐藏加号视图

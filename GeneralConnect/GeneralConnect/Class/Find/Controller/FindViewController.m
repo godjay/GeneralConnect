@@ -7,27 +7,64 @@
 //
 
 #import "FindViewController.h"
+#import "SearchViewController.h"
+#import "RJNavViewController.h"
 
 @interface FindViewController ()
-
+@property (weak,nonatomic)UIView *screenView;
+@property (weak,nonatomic)UIButton *selectedBtn;
 @end
 
 @implementation FindViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:247/255.0 alpha:1.0];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    //创建导航栏右搜索按钮
+    [self setupSearchView];
+
+    //创建筛选视图
+    [self setupScreenView];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupScreenView{
+    NSArray *screenBtnArray = @[@"全国",@"智能排序",@"筛选"];
+    UIView *screenView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 40)];
+    screenView.backgroundColor = [UIColor whiteColor];
+//    [self.tabBarController.view addSubview:screenView];
+    self.screenView = screenView;
+
+    for (int i = 0; i < 3; i++) {
+        UIButton *screenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        screenBtn.tag = i;
+        [screenBtn setTitle:screenBtnArray[i] forState:UIControlStateNormal];
+        screenBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [screenBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [screenBtn setTitleColor:[UIColor colorWithRed:118/255.0 green:215/255.0 blue:254/255.0 alpha:1.0] forState:UIControlStateSelected];
+        CGFloat screenBtnW = self.view.frame.size.width/3;
+        CGFloat screenBtnY = 0;
+        CGFloat screenBtnH = screenView.frame.size.height;
+        CGFloat screenBtnX = i * screenBtnW;
+        screenBtn.frame = CGRectMake(screenBtnX, screenBtnY, screenBtnW, screenBtnH);
+        [screenBtn addTarget:self action:@selector(screenBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+        [screenView addSubview:screenBtn];
+    }
+    //加到TarBarView上面，否则会随view滚动
+//    [self.tabBarController.view insertSubview:self.screenView atIndex:1];    //插入1这个位置，不会影响其他TarBarView上的视图
+    [self.navigationController.view addSubview:screenView];
+    
+}
+
+- (void)setupSearchView{
+    UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    searchBtn.frame = CGRectMake(0, 0, 22, 20);
+    [searchBtn setBackgroundImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+    [searchBtn addTarget:self action:@selector(searchBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:searchBtn];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 #pragma mark - Table view data source
@@ -42,58 +79,17 @@
     return 0;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+- (void)screenBtnAction:(UIButton *)btn{
+    self.selectedBtn.selected = NO;
+    btn.selected = YES;
+    self.selectedBtn = btn;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+//搜索按钮点击
+- (void)searchBtnAction{
+    SearchViewController *searchVc = [[SearchViewController alloc] init];
+    searchVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:searchVc animated:YES];
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
