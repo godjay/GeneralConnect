@@ -9,12 +9,14 @@
 #import "RegisterViewController.h"
 
 @interface RegisterViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 @property (weak, nonatomic) IBOutlet UITextField *ifNum;
 @property (weak, nonatomic) IBOutlet UITextField *pwd;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 @property (weak, nonatomic) IBOutlet UIButton *chooseW;
 @property (weak, nonatomic) IBOutlet UIButton *chooseG;
+
 - (IBAction)sureAction;
 - (IBAction)getIfNum;
 - (IBAction)sureRegister;
@@ -29,20 +31,28 @@
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
     self.title = @"注册";
+    
     //创建导航栏左边按钮
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     leftBtn.frame = CGRectMake(0, 0, 20, 20);
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+    
     [leftBtn addTarget:self action:@selector(leftBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
 }
 
 //同意按钮
 - (IBAction)sureAction {
+    
     _sureBtn.selected = !_sureBtn.selected;
+    
 }
 
 //获取验证码
@@ -56,7 +66,9 @@
 
 //选中网红身份
 - (IBAction)chooseWAction {
+    
     _chooseW.selected = !_chooseW.selected;
+    
     if (_chooseG.selected == YES) {
         _chooseG.selected = NO;
     }
@@ -64,15 +76,18 @@
 
 //选择广告商身份
 - (IBAction)chooseGAction {
+    
     _chooseG.selected = !_chooseG.selected;
+    
     if (_chooseW.selected == YES) {
         _chooseW.selected = NO;
     }
 }
 
 //返回
-- (void)leftBtnAction
-{
+- (void)leftBtnAction{
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 @end

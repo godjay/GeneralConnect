@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface RJProvince : NSObject
-@property (nonatomic,copy)NSString *ID;
-@property (nonatomic,copy)NSString *ProvinceName;
-@property (strong,nonatomic)NSArray *cities;
+@property (nonatomic, copy) NSString *ID;
+@property (nonatomic, copy) NSString *ProvinceName;
+@property (strong, nonatomic) NSArray *cities;
 
-@property (assign,nonatomic, getter = isExpanded) BOOL expanded;
+@property (assign, nonatomic, getter = isExpanded) BOOL expanded;
 
 - (instancetype)initWithDic:(NSDictionary *)dic;
 + (instancetype)groupWithDic:(NSDictionary *)dic;

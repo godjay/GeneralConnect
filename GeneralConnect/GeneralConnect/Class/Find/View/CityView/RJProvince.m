@@ -8,24 +8,32 @@
 
 #import "RJProvince.h"
 #import "RJCity.h"
+
 @implementation RJProvince
 
 + (instancetype)groupWithDic:(NSDictionary *)dic{
+    
     return [[self alloc] initWithDic:dic];
+    
 }
 
 - (instancetype)initWithDic:(NSDictionary *)dic{
+    
     if (self = [super init]) {
         //1
         [self setValuesForKeysWithDictionary:dic];
         //2
         NSMutableArray *cityArray = [NSMutableArray array];
+        
         for (NSDictionary *dict in self.cities) {
+            
             RJCity *city = [RJCity cityWithDic:dict];
             [cityArray addObject:city];
+            
         }
         self.cities = cityArray;
     }
+    
     return self;
 }
 

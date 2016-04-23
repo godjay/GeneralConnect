@@ -15,13 +15,17 @@
 @implementation RJNavViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
     self.navigationBar.translucent = YES;
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav"] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
     [self.view endEditing:YES];
 }
 

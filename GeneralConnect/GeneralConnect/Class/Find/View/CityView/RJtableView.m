@@ -15,7 +15,9 @@
 static NSString *const headerResuseIdentifier = @"headerResuseIdentifier";
 
 @interface RJtableView ()<UITableViewDelegate,UITableViewDataSource>
-@property (weak,nonatomic)RJTableViewCell *lastCell;
+
+@property (weak, nonatomic) RJTableViewCell *lastCell;
+
 @end
 
 @implementation RJtableView
@@ -54,10 +56,13 @@ static NSString *const headerResuseIdentifier = @"headerResuseIdentifier";
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
     return self.groups.count;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     RJProvince *province = self.groups[section];
     return (province.isExpanded ? province.cities.count : 0);
 }
@@ -78,6 +83,7 @@ static NSString *const headerResuseIdentifier = @"headerResuseIdentifier";
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     RJTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
     if (_lastCell == nil) {
         _lastCell = cell;
         cell.textLabel.textColor = [UIColor colorWithRed:118/255.0 green:215/255.0 blue:254/255.0 alpha:1.0];
@@ -86,11 +92,14 @@ static NSString *const headerResuseIdentifier = @"headerResuseIdentifier";
         cell.textLabel.textColor = [UIColor colorWithRed:118/255.0 green:215/255.0 blue:254/255.0 alpha:1.0];
         _lastCell = cell;
     }
+    
     NSLog(@"%ld----%ld",(long)indexPath.section,(long)indexPath.row);
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
     RJProvince *province = self.groups[section];
+    
     RJHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerResuseIdentifier];
 //    header.currentSection = section;
     header.province = province;

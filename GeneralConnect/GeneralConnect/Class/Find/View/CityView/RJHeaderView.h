@@ -14,7 +14,7 @@
 
 @interface RJHeaderView : UITableViewHeaderFooterView
 
-@property (strong,nonatomic)RJProvince *province;
+@property (strong, nonatomic) RJProvince *province;
 
 - (void)headerClick:(void(^)())block;
 

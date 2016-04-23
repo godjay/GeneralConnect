@@ -15,13 +15,16 @@
 @implementation SearchViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     //创建导航栏左边按钮
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     leftBtn.frame = CGRectMake(0, 0, 20, 20);
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+    
     [leftBtn addTarget:self action:@selector(leftBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = leftItem;
 
@@ -31,10 +34,13 @@
     UISearchBar *searchBar = [[UISearchBar alloc] init];
     searchBar.placeholder = @"搜索红人或通告";
     self.navigationItem.titleView = searchBar;
+    
 }
 
 - (void)leftBtnAction{
+    
     [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 

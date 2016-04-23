@@ -8,45 +8,58 @@
 
 #import "RJTarBar.h"
 #import "RJTarBarBtn.h"
+
 @interface RJTarBar ()
-@property (weak,nonatomic)UIButton *selectedBtn;
-@property (strong,nonatomic)NSMutableArray *btnArray;
-@property (weak,nonatomic)UIButton *plus;
+
+@property (weak, nonatomic) UIButton *selectedBtn;
+@property (weak, nonatomic) UIButton *plus;
+@property (strong, nonatomic) NSMutableArray *btnArray;
 
 @end
 
 @implementation RJTarBar
 
 - (NSMutableArray *)btnArray{
+    
     if (_btnArray == nil) {
         _btnArray = [NSMutableArray array];
     }
+    
     return _btnArray;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self) {
+    
+    if (self = [super initWithFrame:frame]) {
+        
         self.backgroundColor = [UIColor blackColor];
         UIButton *plus = [UIButton buttonWithType:UIButtonTypeCustom];
+        
         [plus setImage:[UIImage imageNamed:@"plus2"] forState:UIControlStateNormal];
         [plus setImage:[UIImage imageNamed:@"plus"] forState:UIControlStateHighlighted];
+        
         plus.imageView.contentMode = UIViewContentModeScaleAspectFit;        //好6啊这个属性
         self.plus = plus;
         plus.bounds = CGRectMake(0, 0, 80, self.frame.size.height + 80);
+        
         [plus addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:plus];
     }
+    
     return self;
 }
 
 - (void)plusClick{
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"presentPlus" object:nil];
+    
 }
 
 - (void)addTarBarButtonWithItems:(UITabBarItem *)items{
+    
     //用items模型创建按钮
     RJTarBarBtn *btn = [RJTarBarBtn buttonWithType:UIButtonTypeCustom];
+    
     [btn setTitle:items.title forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor colorWithRed:3/255.0 green:203/255.0 blue:255/255.0 alpha:1.0] forState:UIControlStateSelected];
     [btn setImage:items.image forState:UIControlStateNormal];
@@ -59,16 +72,21 @@
 }
 
 - (void)layoutSubviews{
+    
     [super layoutSubviews];
     
     self.plus.center = CGPointMake(self.center.x, self.center.y);
+    
     for (int i = 0; i < self.btnArray.count; i++ ) {
+        
         UIButton *btn = self.btnArray[i];
         CGFloat btnW = (self.frame.size.width - self.plus.frame.size.width)/self.btnArray.count;
         CGFloat btnX = i * btnW;
+        
         if (i >= self.btnArray.count/2) {
             btnX = btnX + self.plus.frame.size.width;
         }
+        
         btn.frame = CGRectMake(btnX, 0, btnW, self.frame.size.height);
         btn.tag = i;
         
@@ -80,9 +98,11 @@
 }
 
 - (void)btnClick:(UIButton *)btn{
+    
     self.selectedBtn.selected = NO;
     btn.selected = YES;
     self.selectedBtn = btn;
+    
     NSNumber *num = [NSNumber numberWithInteger:btn.tag];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"indexChange" object:num];
 }

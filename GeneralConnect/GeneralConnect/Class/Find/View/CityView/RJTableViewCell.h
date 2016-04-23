@@ -12,6 +12,6 @@
 
 @interface RJTableViewCell : UITableViewCell
 
-@property (strong,nonatomic)RJProvince *province;
+@property (strong, nonatomic) RJProvince *province;
 
 @end

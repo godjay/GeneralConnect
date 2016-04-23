@@ -9,6 +9,7 @@
 #import "plusView.h"
 
 @interface plusView ()
+
 - (IBAction)fireBtnAction;
 
 @end
@@ -17,7 +18,9 @@
 
 //发动态
 - (IBAction)fireBtnAction {
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"fire" object:nil];
+    
 }
 
 @end

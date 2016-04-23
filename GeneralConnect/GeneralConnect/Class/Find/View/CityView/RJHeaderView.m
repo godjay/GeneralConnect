@@ -8,10 +8,10 @@
 
 #import "RJHeaderView.h"
 #import "RJProvince.h"
+
 @interface RJHeaderView ()
 
 @property (nonatomic, copy) void(^headerBlock)();
-
 
 @property (weak, nonatomic) UIButton *btn;
 @property (weak, nonatomic) UIButton *imageBtn;
@@ -21,6 +21,7 @@
 @implementation RJHeaderView
 
 - (void)setProvince:(RJProvince *)province{
+    
     _province = province;
     
     [self.btn setTitle:province.ProvinceName forState:UIControlStateNormal];
@@ -34,13 +35,16 @@
 }
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
+    
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
+        
         //添加子控件
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         self.btn = btn;
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         btn.titleEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
+        
         [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:btn];
         
@@ -52,11 +56,14 @@
         [imageBtn setImage:[UIImage imageNamed:@"more"] forState:UIControlStateNormal];
         [self.contentView addSubview:imageBtn];
     }
+    
     return self;
 }
 
 - (void)layoutSubviews{
+    
     [super layoutSubviews];
+    
     self.btn.frame = self.bounds;
     self.imageBtn.frame = CGRectMake(self.frame.size.width - 24, (self.frame.size.height - 17)/2, 17, 17);
 }
