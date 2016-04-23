@@ -11,18 +11,66 @@
 #import "RJNavViewController.h"
 #import "plusView.h"
 #import "FireViewController.h"
+#import "RJtableView.h"
+#import "RJIntelligentView.h"
+#import "RJScrView.h"
 
 @interface FindViewController ()
 @property (weak,nonatomic)UIView *screenView;
 @property (weak,nonatomic)UIButton *selectedBtn;
 @property (weak,nonatomic)UIView *maskView;
+@property (weak,nonatomic)UIView *screenMaskView;
 @property (weak,nonatomic)UIView *plusView;
+@property (weak,nonatomic)RJtableView *cityView;
+@property (weak,nonatomic)RJIntelligentView *intelligentView;
+@property (weak,nonatomic)RJScrView *scrView;
 @end
 
 @implementation FindViewController
 
 - (void)viewWillAppear:(BOOL)animated{
     self.screenView.hidden = NO; //设置筛选视图显示
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    _screenView.hidden = YES;
+    _screenMaskView.hidden = YES;
+    [_cityView removeFromSuperview];
+    [_intelligentView removeFromSuperview];
+    [_scrView removeFromSuperview];
+
+}
+
+- (RJScrView *)scrView{
+    if (!_scrView) {
+        RJScrView *scrView = [[NSBundle mainBundle] loadNibNamed:@"RJScrView" owner:self options:nil].lastObject;
+        scrView.frame = CGRectMake(0, 104, self.view.bounds.size.width, 250);
+        _scrView = scrView;
+    }
+    return _scrView;
+}
+
+- (RJIntelligentView *)intelligentView{
+    if (!_intelligentView) {
+        RJIntelligentView *intelligentView = [[RJIntelligentView alloc] initWithFrame:CGRectMake(0, 104, self.view.bounds.size.width, 105)];
+        _intelligentView = intelligentView;
+    }
+    return _intelligentView;
+}
+
+- (UIView *)screenMaskView{
+    if (!_screenMaskView) {
+        [self setupScreenMaskView];
+    }
+    return _screenMaskView;
+}
+
+- (RJtableView *)cityView{
+    if (!_cityView) {
+        RJtableView *cityView = [[RJtableView alloc] initWithFrame:CGRectMake(0, 104, self.view.frame.size.width/2, self.view.frame.size.height - 104 - self.tabBarController.tabBar.frame.size.height - 10)];
+        _cityView = cityView;
+    }
+    return _cityView;
 }
 
 - (void)viewDidLoad {
@@ -47,7 +95,8 @@
 //初始化加号视图
 - (void)setupPlusView{
     [self setupMaskView];
-    
+    [self setupMaskBgView];
+
     plusView *myplusView = [[NSBundle mainBundle] loadNibNamed:@"plusView" owner:self options:nil].lastObject;
     myplusView.frame = CGRectMake(0, self.tabBarController.view.bounds.size.height, self.view.frame.size.width, 200);
 //    [self.view insertSubview:myplusView aboveSubview:self.maskView];
@@ -64,8 +113,19 @@
     maskView.hidden = YES;
     self.maskView = maskView;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(maskViewClick)];
-    [self setupMaskBgView];
     [_maskView addGestureRecognizer:tap];
+}
+
+//筛选视图遮罩视图
+- (void)setupScreenMaskView{
+    UIView *screenMaskView = [[UIView alloc] initWithFrame:CGRectMake(0, 104, self.view.frame.size.width, self.view.frame.size.height)];
+    screenMaskView.backgroundColor = [UIColor blackColor];
+    screenMaskView.alpha = 0.5;
+    [self.navigationController.view addSubview:screenMaskView];
+    screenMaskView.hidden = YES;
+    _screenMaskView = screenMaskView;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(screenMaskViewClick)];
+    [_screenMaskView addGestureRecognizer:tap];
 }
 
 - (void)setupMaskBgView{
@@ -93,6 +153,12 @@
     for (int i = 0; i < 3; i++) {
         UIButton *screenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         screenBtn.tag = i;
+        
+        if (i == 0) {
+            _selectedBtn = screenBtn;
+            _selectedBtn.selected = YES;
+        }
+        
         [screenBtn setTitle:screenBtnArray[i] forState:UIControlStateNormal];
         screenBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [screenBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -138,11 +204,31 @@
     self.selectedBtn.selected = NO;
     btn.selected = YES;
     self.selectedBtn = btn;
+    if (btn.tag == 0) {
+        
+        [_intelligentView removeFromSuperview];
+        [_scrView removeFromSuperview];
+        self.screenMaskView.hidden = NO;
+        [self.navigationController.view addSubview:self.cityView];
+        
+    }else if (btn.tag == 1){
+        
+        [_cityView removeFromSuperview];
+        [_scrView removeFromSuperview];
+        self.screenMaskView.hidden = NO;
+        [self.navigationController.view addSubview:self.intelligentView];
+        
+    }else if (btn.tag == 2){
+        
+        [_intelligentView removeFromSuperview];
+        [_cityView removeFromSuperview];
+        self.screenMaskView.hidden = NO;
+        [self.navigationController.view addSubview:self.scrView];
+    }
 }
 
 //搜索按钮点击
 - (void)searchBtnAction{
-    self.screenView.hidden = YES;
     SearchViewController *searchVc = [[SearchViewController alloc] init];
     searchVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:searchVc animated:YES];
@@ -152,6 +238,12 @@
 /*通知方法*/
 //动画弹出加号按钮视图
 - (void)presentTextPlus{
+    
+    _screenMaskView.hidden = YES;
+    [_cityView removeFromSuperview];
+    [_intelligentView removeFromSuperview];
+    [_scrView removeFromSuperview];
+
     self.maskView.hidden = NO;
     self.tabBarController.tabBar.hidden = YES;
     [UIView animateWithDuration:0.3 animations:^{
@@ -175,5 +267,14 @@
     } completion:^(BOOL finished) {
         self.maskView.hidden = YES;
     }];
+}
+
+//隐藏筛选遮罩视图，移除遮罩视图
+- (void)screenMaskViewClick{
+    _screenMaskView.hidden = YES;
+    [_cityView removeFromSuperview];
+    [_intelligentView removeFromSuperview];
+    [_scrView removeFromSuperview];
+
 }
 @end

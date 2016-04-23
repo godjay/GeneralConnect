@@ -60,6 +60,16 @@
 		ACA356391CC5E197001F85A0 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA356371CC5E197001F85A0 /* text.png */; };
 		ACA3563B1CC605F4001F85A0 /* x1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACA3563A1CC605F4001F85A0 /* x1.jpg */; };
 		ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3563F1CC61A70001F85A0 /* FireViewController.m */; };
+		ACA9CFC41CCA18380025F0FC /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA9CFB81CCA18380025F0FC /* more.png */; };
+		ACA9CFC51CCA18380025F0FC /* Provineces.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA9CFB91CCA18380025F0FC /* Provineces.plist */; };
+		ACA9CFC61CCA18380025F0FC /* RJCity.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFBB1CCA18380025F0FC /* RJCity.m */; };
+		ACA9CFC71CCA18380025F0FC /* RJHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFBD1CCA18380025F0FC /* RJHeaderView.m */; };
+		ACA9CFC81CCA18380025F0FC /* RJProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFBF1CCA18380025F0FC /* RJProvince.m */; };
+		ACA9CFC91CCA18380025F0FC /* RJtableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFC11CCA18380025F0FC /* RJtableView.m */; };
+		ACA9CFCA1CCA18380025F0FC /* RJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFC31CCA18380025F0FC /* RJTableViewCell.m */; };
+		ACA9CFCD1CCA25870025F0FC /* RJIntelligentView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFCC1CCA25870025F0FC /* RJIntelligentView.m */; };
+		ACA9CFD61CCA30520025F0FC /* RJScrView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9CFD51CCA30520025F0FC /* RJScrView.m */; };
+		ACA9CFD81CCA305E0025F0FC /* RJScrView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA9CFD71CCA305E0025F0FC /* RJScrView.xib */; };
 		ACC537C41CC0C461006859AC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC537C31CC0C461006859AC /* MediaPlayer.framework */; };
 		ACCE77021CBB355E008041F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCE77011CBB355E008041F8 /* main.m */; };
 		ACCE770B1CBB355E008041F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCE77091CBB355E008041F8 /* Main.storyboard */; };
@@ -156,6 +166,23 @@
 		ACA3563A1CC605F4001F85A0 /* x1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = x1.jpg; path = ../imge/x1.jpg; sourceTree = "<group>"; };
 		ACA3563E1CC61A70001F85A0 /* FireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireViewController.h; sourceTree = "<group>"; };
 		ACA3563F1CC61A70001F85A0 /* FireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireViewController.m; sourceTree = "<group>"; };
+		ACA9CFB81CCA18380025F0FC /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		ACA9CFB91CCA18380025F0FC /* Provineces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provineces.plist; sourceTree = "<group>"; };
+		ACA9CFBA1CCA18380025F0FC /* RJCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCity.h; sourceTree = "<group>"; };
+		ACA9CFBB1CCA18380025F0FC /* RJCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCity.m; sourceTree = "<group>"; };
+		ACA9CFBC1CCA18380025F0FC /* RJHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJHeaderView.h; sourceTree = "<group>"; };
+		ACA9CFBD1CCA18380025F0FC /* RJHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJHeaderView.m; sourceTree = "<group>"; };
+		ACA9CFBE1CCA18380025F0FC /* RJProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJProvince.h; sourceTree = "<group>"; };
+		ACA9CFBF1CCA18380025F0FC /* RJProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJProvince.m; sourceTree = "<group>"; };
+		ACA9CFC01CCA18380025F0FC /* RJtableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJtableView.h; sourceTree = "<group>"; };
+		ACA9CFC11CCA18380025F0FC /* RJtableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJtableView.m; sourceTree = "<group>"; };
+		ACA9CFC21CCA18380025F0FC /* RJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTableViewCell.h; sourceTree = "<group>"; };
+		ACA9CFC31CCA18380025F0FC /* RJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJTableViewCell.m; sourceTree = "<group>"; };
+		ACA9CFCB1CCA25870025F0FC /* RJIntelligentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJIntelligentView.h; sourceTree = "<group>"; };
+		ACA9CFCC1CCA25870025F0FC /* RJIntelligentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJIntelligentView.m; sourceTree = "<group>"; };
+		ACA9CFD41CCA30520025F0FC /* RJScrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJScrView.h; sourceTree = "<group>"; };
+		ACA9CFD51CCA30520025F0FC /* RJScrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJScrView.m; sourceTree = "<group>"; };
+		ACA9CFD71CCA305E0025F0FC /* RJScrView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJScrView.xib; sourceTree = "<group>"; };
 		ACC537C31CC0C461006859AC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		ACCE76FD1CBB355E008041F8 /* GeneralConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCE77011CBB355E008041F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -245,6 +272,12 @@
 		AC82D6F91CC48BC800DE5657 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACA9CFB71CCA18380025F0FC /* CityView */,
+				ACA9CFCB1CCA25870025F0FC /* RJIntelligentView.h */,
+				ACA9CFCC1CCA25870025F0FC /* RJIntelligentView.m */,
+				ACA9CFD41CCA30520025F0FC /* RJScrView.h */,
+				ACA9CFD51CCA30520025F0FC /* RJScrView.m */,
+				ACA9CFD71CCA305E0025F0FC /* RJScrView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -639,6 +672,25 @@
 			path = "../按钮";
 			sourceTree = "<group>";
 		};
+		ACA9CFB71CCA18380025F0FC /* CityView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9CFB81CCA18380025F0FC /* more.png */,
+				ACA9CFB91CCA18380025F0FC /* Provineces.plist */,
+				ACA9CFBA1CCA18380025F0FC /* RJCity.h */,
+				ACA9CFBB1CCA18380025F0FC /* RJCity.m */,
+				ACA9CFBC1CCA18380025F0FC /* RJHeaderView.h */,
+				ACA9CFBD1CCA18380025F0FC /* RJHeaderView.m */,
+				ACA9CFBE1CCA18380025F0FC /* RJProvince.h */,
+				ACA9CFBF1CCA18380025F0FC /* RJProvince.m */,
+				ACA9CFC01CCA18380025F0FC /* RJtableView.h */,
+				ACA9CFC11CCA18380025F0FC /* RJtableView.m */,
+				ACA9CFC21CCA18380025F0FC /* RJTableViewCell.h */,
+				ACA9CFC31CCA18380025F0FC /* RJTableViewCell.m */,
+			);
+			path = CityView;
+			sourceTree = "<group>";
+		};
 		ACCE76F41CBB355E008041F8 = {
 			isa = PBXGroup;
 			children = (
@@ -801,12 +853,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC82D7691CC4D3D700DE5657 /* op.png in Resources */,
+				ACA9CFC41CCA18380025F0FC /* more.png in Resources */,
 				AC82D7901CC4EA3100DE5657 /* news2.png in Resources */,
 				AC82D78C1CC4EA1000DE5657 /* mine2.png in Resources */,
 				ACCE77101CBB355E008041F8 /* LaunchScreen.storyboard in Resources */,
 				AC02ECEB1CC71555000156AF /* video.png in Resources */,
 				ACA3562B1CC5C77A001F85A0 /* plus.png in Resources */,
 				AC82D7841CC4E9EB00DE5657 /* find2.png in Resources */,
+				ACA9CFC51CCA18380025F0FC /* Provineces.plist in Resources */,
 				ACA356351CC5D1C3001F85A0 /* plusView.xib in Resources */,
 				ACA356381CC5E197001F85A0 /* ×.png in Resources */,
 				AC82D7571CC4950200DE5657 /* phone.png in Resources */,
@@ -831,6 +885,7 @@
 				AC82D7531CC4950200DE5657 /* log-in-2.png in Resources */,
 				AC82D78F1CC4EA3100DE5657 /* news.png in Resources */,
 				AC82D75E1CC4C58F00DE5657 /* RegisterViewController.xib in Resources */,
+				ACA9CFD81CCA305E0025F0FC /* RJScrView.xib in Resources */,
 				ACA356271CC5C1D4001F85A0 /* wanghongquan.png in Resources */,
 				ACA356281CC5C1D4001F85A0 /* wanghongquan2.png in Resources */,
 				AC82D76F1CC4DB8000DE5657 /* nav.png in Resources */,
@@ -870,18 +925,25 @@
 				AC82D7331CC48BC800DE5657 /* NewViewController.m in Sources */,
 				AC82D7311CC48BC800DE5657 /* MessageViewController.m in Sources */,
 				AC82D7321CC48BC800DE5657 /* MineViewController.m in Sources */,
+				ACA9CFC61CCA18380025F0FC /* RJCity.m in Sources */,
+				ACA9CFC71CCA18380025F0FC /* RJHeaderView.m in Sources */,
 				AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */,
 				AC82D7661CC4CF7000DE5657 /* ForgetViewController.m in Sources */,
+				ACA9CFCA1CCA18380025F0FC /* RJTableViewCell.m in Sources */,
 				AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */,
 				AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */,
 				ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */,
 				AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */,
 				AC82D72C1CC48BC800DE5657 /* FindViewController.m in Sources */,
 				AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */,
+				ACA9CFC81CCA18380025F0FC /* RJProvince.m in Sources */,
+				ACA9CFCD1CCA25870025F0FC /* RJIntelligentView.m in Sources */,
+				ACA9CFD61CCA30520025F0FC /* RJScrView.m in Sources */,
 				AC82D75D1CC4C58F00DE5657 /* RegisterViewController.m in Sources */,
 				ACCE77021CBB355E008041F8 /* main.m in Sources */,
 				AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */,
 				AC82D7301CC48BC800DE5657 /* RJTarBarBtn.m in Sources */,
+				ACA9CFC91CCA18380025F0FC /* RJtableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
