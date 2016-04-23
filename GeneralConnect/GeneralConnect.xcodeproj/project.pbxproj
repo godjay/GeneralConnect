@@ -816,6 +816,7 @@
 				TargetAttributes = {
 					ACCE76FC1CBB355E008041F8 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = BDS7V7WK6P;
 					};
 					ACCE77151CBB355E008041F8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1085,6 +1086,7 @@
 		ACCE772B1CBB355E008041F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GeneralConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1098,6 +1100,7 @@
 		ACCE772C1CBB355E008041F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GeneralConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

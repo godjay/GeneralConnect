@@ -55,8 +55,13 @@
     
     if (!_scrView) {
         RJScrView *scrView = [[NSBundle mainBundle] loadNibNamed:@"RJScrView" owner:self options:nil].lastObject;
-        scrView.frame = CGRectMake(0, 104, self.view.bounds.size.width, 250);
+        scrView.frame = CGRectMake(0, 104, self.view.bounds.size.width, 413);
         _scrView = scrView;
+        
+        [scrView trueClick:^{
+            _screenMaskView.hidden = YES;
+            [_scrView removeFromSuperview];
+        }];
     }
     
     return _scrView;
@@ -210,6 +215,13 @@
         [screenBtn addTarget:self action:@selector(screenBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [screenView addSubview:screenBtn];
     }
+    
+    //分割线
+    UIView *sepView = [[UIView alloc] initWithFrame:CGRectMake(5, screenView.frame.size.height - 1, screenView.frame.size.width - 10, 1)];
+    sepView.backgroundColor = [UIColor lightGrayColor];
+    sepView.alpha = 0.2;
+    [screenView addSubview:sepView];
+    
     //加到TarBarView上面，否则会随view滚动
 //    [self.tabBarController.view insertSubview:self.screenView atIndex:1];    //插入1这个位置，不会影响其他TarBarView上的视图
     [self.navigationController.view addSubview:screenView];
@@ -267,7 +279,8 @@
         [_intelligentView removeFromSuperview];
         [_cityView removeFromSuperview];
         self.screenMaskView.hidden = NO;
-        [self.navigationController.view addSubview:self.scrView];
+//        [self.navigationController.view addSubview:self.scrView];
+        [self.navigationController.view insertSubview:self.scrView aboveSubview:self.screenMaskView];
     }
     
 }

@@ -10,4 +10,6 @@
 
 @interface RJScrView : UIView
 
+- (void)trueClick:(void(^)())block;
+
 @end
