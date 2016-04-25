@@ -2,7 +2,7 @@
 //  FindViewController.m
 //  GeneralConnect
 //
-//  Created by lirenjie on 16/4/18.
+//  Created by lirenjie on 16/4/25.
 //  Copyright © 2016年 lirenjie. All rights reserved.
 //
 
@@ -14,6 +14,7 @@
 #import "RJtableView.h"
 #import "RJIntelligentView.h"
 #import "RJScrView.h"
+#import "RJSearchNoticeView.h"
 
 @interface FindViewController ()
 
@@ -104,17 +105,28 @@
     
     //创建导航栏右搜索按钮
     [self setupSearchView];
-
+    
     //创建筛选视图
     [self setupScreenView];
     
     //创建加号视图
     [self setupPlusView];
-
+    
+    //创建网红找通告视图
+    [self setupSearchNoticeView];
+    
     //接收通知，弹出加号视图或发动态控制器
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentTextPlus) name:@"presentPlus" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fireNew) name:@"fire" object:nil];
+    
+}
 
+//创建网红找通告视图
+- (void)setupSearchNoticeView{
+    
+    RJSearchNoticeView *searchNoticeView = [[RJSearchNoticeView alloc] initWithFrame:CGRectMake(0, _screenView.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height - self.tabBarController.tabBar.bounds.size.height)];
+    [self.view addSubview:searchNoticeView];
+    
 }
 
 //初始化加号视图
@@ -122,10 +134,10 @@
     
     [self setupMaskView];
     [self setupMaskBgView];
-
+    
     plusView *myplusView = [[NSBundle mainBundle] loadNibNamed:@"plusView" owner:self options:nil].lastObject;
     myplusView.frame = CGRectMake(0, self.tabBarController.view.bounds.size.height, self.view.frame.size.width, 200);
-//    [self.view insertSubview:myplusView aboveSubview:self.maskView];
+    //    [self.view insertSubview:myplusView aboveSubview:self.maskView];
     
     [self.tabBarController.view addSubview:myplusView];
     
@@ -136,7 +148,7 @@
 - (void)setupMaskView{
     
     UIView *maskView = [[UIView alloc] initWithFrame:self.view.frame];
-//    self.tabBarController.view.userInteractionEnabled = NO;
+    //    self.tabBarController.view.userInteractionEnabled = NO;
     maskView.backgroundColor = [UIColor whiteColor];
     
     [self.tabBarController.view addSubview:maskView];
@@ -188,9 +200,9 @@
     
     UIView *screenView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 40)];
     screenView.backgroundColor = [UIColor whiteColor];
-//    [self.tabBarController.view addSubview:screenView];
+    //    [self.tabBarController.view addSubview:screenView];
     self.screenView = screenView;
-
+    
     for (int i = 0; i < 3; i++) {
         
         UIButton *screenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -223,7 +235,7 @@
     [screenView addSubview:sepView];
     
     //加到TarBarView上面，否则会随view滚动
-//    [self.tabBarController.view insertSubview:self.screenView atIndex:1];    //插入1这个位置，不会影响其他TarBarView上的视图
+    //    [self.tabBarController.view insertSubview:self.screenView atIndex:1];    //插入1这个位置，不会影响其他TarBarView上的视图
     [self.navigationController.view addSubview:screenView];
     
 }
@@ -241,17 +253,6 @@
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return 0;
-}
 
 //筛选按钮点击事件
 - (void)screenBtnAction:(UIButton *)btn{
@@ -279,7 +280,7 @@
         [_intelligentView removeFromSuperview];
         [_cityView removeFromSuperview];
         self.screenMaskView.hidden = NO;
-//        [self.navigationController.view addSubview:self.scrView];
+        //        [self.navigationController.view addSubview:self.scrView];
         [self.navigationController.view insertSubview:self.scrView aboveSubview:self.screenMaskView];
     }
     
@@ -303,7 +304,7 @@
     [_cityView removeFromSuperview];
     [_intelligentView removeFromSuperview];
     [_scrView removeFromSuperview];
-
+    
     self.maskView.hidden = NO;
     self.tabBarController.tabBar.hidden = YES;
     
@@ -344,6 +345,8 @@
     [_cityView removeFromSuperview];
     [_intelligentView removeFromSuperview];
     [_scrView removeFromSuperview];
-
+    
 }
+
+
 @end

@@ -11,6 +11,7 @@
 #import "RegisterViewController.h"
 #import "RJNavViewController.h"
 #import "ForgetViewController.h"
+#import "RJNetRequestTool.h"
 
 @interface LoginViewController ()
 
@@ -44,6 +45,21 @@
 
 //登录
 - (IBAction)loginAction {
+    /*
+    NSString *url = @"http://wanghong.ngrok.natapp.cn/v1/user/login";
+    NSDictionary *dic = @{
+                          @"LoginForm[username]" : @"18339927398",
+                          @"LoginForm[password]" : @"123456",
+                          @"LoginForm[verifyCode]" : @"222"
+                          };
+    
+    [RJNetRequestTool PostWithURL:url params:dic success:^(id json) {
+        NSLog(@"0000000%@",json);
+    } failure:^(NSError *error) {
+        NSLog(@"111111%@",error);
+
+    }];
+    */
     
     RJTabBarController *mainTarBarVc = [[RJTabBarController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController = mainTarBarVc;

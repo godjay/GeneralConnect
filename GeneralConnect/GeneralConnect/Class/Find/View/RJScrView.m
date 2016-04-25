@@ -79,7 +79,7 @@
         btn.layer.cornerRadius = 5;
         btn.clipsToBounds = YES;
         
-        [btn addTarget:self action:@selector(scrBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+        [btn addTarget:self action:@selector(scrBtnAction:) forControlEvents:UIControlEventTouchDown];
         
         if (btn.tag == 0) {
             _selectedBtn1 = btn;

@@ -27,7 +27,7 @@
                             <state key="normal" title="不限">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYb-pt-Z2s">
                             <rect key="frame" x="101" y="37" width="75" height="40"/>
@@ -36,7 +36,7 @@
                             <state key="normal" title="男">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7A-YD-4t3">
                             <rect key="frame" x="184" y="37" width="75" height="40"/>
@@ -45,7 +45,7 @@
                             <state key="normal" title="女">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,7 +76,7 @@
                             <state key="normal" title="不限">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojK-Kk-UwT">
                             <rect key="frame" x="185" y="37" width="75" height="40"/>
@@ -85,7 +85,7 @@
                             <state key="normal" title="二次元">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll2-ya-KpP">
                             <rect key="frame" x="268" y="37" width="75" height="40"/>
@@ -94,7 +94,7 @@
                             <state key="normal" title="表演">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgh-0i-uNm">
                             <rect key="frame" x="19" y="90" width="75" height="40"/>
@@ -103,7 +103,7 @@
                             <state key="normal" title="模特">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0B-Ez-Hwo">
                             <rect key="frame" x="102" y="37" width="75" height="40"/>
@@ -112,16 +112,7 @@
                             <state key="normal" title="文艺范">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evW-ba-UNa">
-                            <rect key="frame" x="102" y="90" width="75" height="40"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <state key="normal" title="英伦范">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq6-zl-IpM">
                             <rect key="frame" x="116" y="167" width="155" height="47"/>
@@ -136,7 +127,16 @@
                             <state key="normal" title="恶搞">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
-                            <state key="selected" backgroundImage="nav.png"/>
+                            <state key="selected" backgroundImage="buxian.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evW-ba-UNa">
+                            <rect key="frame" x="102" y="90" width="75" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="英伦范">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="buxian.png"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,6 +173,6 @@
         </view>
     </objects>
     <resources>
-        <image name="nav.png" width="375" height="64"/>
+        <image name="buxian.png" width="160" height="60"/>
     </resources>
 </document>

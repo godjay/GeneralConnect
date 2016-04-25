@@ -10,6 +10,8 @@
 
 @interface FireViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *fireBtn;
+
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
 
 @end
@@ -33,6 +35,8 @@
     
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    self.fireBtn.backgroundColor = [UIColor colorWithRed:3/255.0 green:160/255.0 blue:235/255.0 alpha:1.0];
 
 }
 

@@ -13,7 +13,18 @@
 		AC02ECEF1CC7171A000156AF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECEE1CC7171A000156AF /* search.png */; };
 		AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC02ECF11CC7186E000156AF /* SearchViewController.m */; };
 		AC02ECF41CC7186E000156AF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECF21CC7186E000156AF /* SearchViewController.xib */; };
-		AC82D72C1CC48BC800DE5657 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D6F71CC48BC800DE5657 /* FindViewController.m */; };
+		AC2038C71CCDBD580064E11E /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038C61CCDBD580064E11E /* FindViewController.m */; };
+		AC2038CA1CCDBE690064E11E /* RJSearchNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038C91CCDBE690064E11E /* RJSearchNoticeView.m */; };
+		AC2038CE1CCDBEA00064E11E /* RJSearchNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038CC1CCDBEA00064E11E /* RJSearchNoticeCell.m */; };
+		AC2038CF1CCDBEA00064E11E /* RJSearchNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2038CD1CCDBEA00064E11E /* RJSearchNoticeCell.xib */; };
+		AC2038D21CCDFFF00064E11E /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038D01CCDFFF00064E11E /* weibo.png */; };
+		AC2038D31CCDFFF00064E11E /* weixin.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038D11CCDFFF00064E11E /* weixin.png */; };
+		AC2038D51CCE015C0064E11E /* buxian.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038D41CCE015C0064E11E /* buxian.png */; };
+		AC2038D81CCE02770064E11E /* mew.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038D61CCE02770064E11E /* mew.png */; };
+		AC2038D91CCE02770064E11E /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038D71CCE02770064E11E /* time.png */; };
+		AC2038DB1CCE02AD0064E11E /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038DA1CCE02AD0064E11E /* head.png */; };
+		AC2038DE1CCE02DC0064E11E /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038DC1CCE02DC0064E11E /* eye.png */; };
+		AC2038DF1CCE02DC0064E11E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038DD1CCE02DC0064E11E /* map.png */; };
 		AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7091CC48BC800DE5657 /* RJNavViewController.m */; };
 		AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70B1CC48BC800DE5657 /* RJTabBarController.m */; };
 		AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70F1CC48BC800DE5657 /* RJTarBar.m */; };
@@ -78,6 +89,8 @@
 		ACCE771B1CBB355E008041F8 /* GeneralConnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCE771A1CBB355E008041F8 /* GeneralConnectTests.m */; };
 		ACCE77261CBB355E008041F8 /* GeneralConnectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCE77251CBB355E008041F8 /* GeneralConnectUITests.m */; };
 		ACCE77431CBB56C8008041F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCE77421CBB56C8008041F8 /* Images.xcassets */; };
+		ACD3AC891CCB662300A287DC /* RJNetRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3AC881CCB662300A287DC /* RJNetRequestTool.m */; };
+		DA555B5C7B1CE46608280D5E /* libPods-GeneralConnect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE1E57D919435CCDA57E5E6 /* libPods-GeneralConnect.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +111,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BF1B20F9749CC7DE18A36DE /* Pods-GeneralConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeneralConnect/Pods-GeneralConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		AC02ECE81CC71555000156AF /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
 		AC02ECE91CC71555000156AF /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
 		AC02ECEC1CC71567000156AF /* FireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FireViewController.xib; sourceTree = "<group>"; };
@@ -105,8 +119,21 @@
 		AC02ECF01CC7186E000156AF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		AC02ECF11CC7186E000156AF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		AC02ECF21CC7186E000156AF /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		AC82D6F61CC48BC800DE5657 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
-		AC82D6F71CC48BC800DE5657 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		AC2038C51CCDBD580064E11E /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		AC2038C61CCDBD580064E11E /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		AC2038C81CCDBE690064E11E /* RJSearchNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSearchNoticeView.h; sourceTree = "<group>"; };
+		AC2038C91CCDBE690064E11E /* RJSearchNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJSearchNoticeView.m; sourceTree = "<group>"; };
+		AC2038CB1CCDBEA00064E11E /* RJSearchNoticeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RJSearchNoticeCell.h; path = CityView/RJSearchNoticeCell.h; sourceTree = "<group>"; };
+		AC2038CC1CCDBEA00064E11E /* RJSearchNoticeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RJSearchNoticeCell.m; path = CityView/RJSearchNoticeCell.m; sourceTree = "<group>"; };
+		AC2038CD1CCDBEA00064E11E /* RJSearchNoticeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RJSearchNoticeCell.xib; path = CityView/RJSearchNoticeCell.xib; sourceTree = "<group>"; };
+		AC2038D01CCDFFF00064E11E /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		AC2038D11CCDFFF00064E11E /* weixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weixin.png; sourceTree = "<group>"; };
+		AC2038D41CCE015C0064E11E /* buxian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buxian.png; sourceTree = "<group>"; };
+		AC2038D61CCE02770064E11E /* mew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mew.png; sourceTree = "<group>"; };
+		AC2038D71CCE02770064E11E /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		AC2038DA1CCE02AD0064E11E /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		AC2038DC1CCE02DC0064E11E /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		AC2038DD1CCE02DC0064E11E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		AC82D7081CC48BC800DE5657 /* RJNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNavViewController.h; sourceTree = "<group>"; };
 		AC82D7091CC48BC800DE5657 /* RJNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNavViewController.m; sourceTree = "<group>"; };
 		AC82D70A1CC48BC800DE5657 /* RJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTabBarController.h; sourceTree = "<group>"; };
@@ -197,6 +224,10 @@
 		ACCE77251CBB355E008041F8 /* GeneralConnectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralConnectUITests.m; sourceTree = "<group>"; };
 		ACCE77271CBB355E008041F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACCE77421CBB56C8008041F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ACD3AC871CCB662300A287DC /* RJNetRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNetRequestTool.h; sourceTree = "<group>"; };
+		ACD3AC881CCB662300A287DC /* RJNetRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNetRequestTool.m; sourceTree = "<group>"; };
+		DC66C406CF53C9402C427B26 /* Pods-GeneralConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeneralConnect/Pods-GeneralConnect.release.xcconfig"; sourceTree = "<group>"; };
+		FBE1E57D919435CCDA57E5E6 /* libPods-GeneralConnect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeneralConnect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC537C41CC0C461006859AC /* MediaPlayer.framework in Frameworks */,
+				DA555B5C7B1CE46608280D5E /* libPods-GeneralConnect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +257,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		416C6DBDF873C21E9011E781 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BF1B20F9749CC7DE18A36DE /* Pods-GeneralConnect.debug.xcconfig */,
+				DC66C406CF53C9402C427B26 /* Pods-GeneralConnect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC82D6F31CC48BC800DE5657 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				ACD3AC861CCB662300A287DC /* Tool */,
 				AC82D7061CC48BC800DE5657 /* Main */,
 				AC82D6F41CC48BC800DE5657 /* Find */,
 				AC82D6FA1CC48BC800DE5657 /* Fire */,
@@ -254,8 +296,8 @@
 		AC82D6F51CC48BC800DE5657 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC82D6F61CC48BC800DE5657 /* FindViewController.h */,
-				AC82D6F71CC48BC800DE5657 /* FindViewController.m */,
+				AC2038C51CCDBD580064E11E /* FindViewController.h */,
+				AC2038C61CCDBD580064E11E /* FindViewController.m */,
 				AC82D6F81CC48BC800DE5657 /* Model */,
 			);
 			path = Controller;
@@ -278,6 +320,11 @@
 				ACA9CFD41CCA30520025F0FC /* RJScrView.h */,
 				ACA9CFD51CCA30520025F0FC /* RJScrView.m */,
 				ACA9CFD71CCA305E0025F0FC /* RJScrView.xib */,
+				AC2038C81CCDBE690064E11E /* RJSearchNoticeView.h */,
+				AC2038C91CCDBE690064E11E /* RJSearchNoticeView.m */,
+				AC2038CB1CCDBEA00064E11E /* RJSearchNoticeCell.h */,
+				AC2038CC1CCDBEA00064E11E /* RJSearchNoticeCell.m */,
+				AC2038CD1CCDBEA00064E11E /* RJSearchNoticeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,6 +667,7 @@
 		AC82D74A1CC4950200DE5657 /* imge */ = {
 			isa = PBXGroup;
 			children = (
+				AC2038DA1CCE02AD0064E11E /* head.png */,
 				AC82D7701CC4E07800DE5657 /* 按钮 */,
 				AC82D74B1CC4950200DE5657 /* login */,
 			);
@@ -649,6 +697,13 @@
 		AC82D7701CC4E07800DE5657 /* 按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				AC2038DC1CCE02DC0064E11E /* eye.png */,
+				AC2038DD1CCE02DC0064E11E /* map.png */,
+				AC2038D61CCE02770064E11E /* mew.png */,
+				AC2038D71CCE02770064E11E /* time.png */,
+				AC2038D41CCE015C0064E11E /* buxian.png */,
+				AC2038D01CCDFFF00064E11E /* weibo.png */,
+				AC2038D11CCDFFF00064E11E /* weixin.png */,
 				AC02ECEE1CC7171A000156AF /* search.png */,
 				AC02ECE81CC71555000156AF /* pic.png */,
 				AC02ECE91CC71555000156AF /* video.png */,
@@ -698,6 +753,8 @@
 				ACCE77191CBB355E008041F8 /* GeneralConnectTests */,
 				ACCE77241CBB355E008041F8 /* GeneralConnectUITests */,
 				ACCE76FE1CBB355E008041F8 /* Products */,
+				416C6DBDF873C21E9011E781 /* Pods */,
+				BC5F2BA72F0CC19F74779E7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -749,6 +806,23 @@
 			path = GeneralConnectUITests;
 			sourceTree = "<group>";
 		};
+		ACD3AC861CCB662300A287DC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				ACD3AC871CCB662300A287DC /* RJNetRequestTool.h */,
+				ACD3AC881CCB662300A287DC /* RJNetRequestTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC5F2BA72F0CC19F74779E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1E57D919435CCDA57E5E6 /* libPods-GeneralConnect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -756,9 +830,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACCE772A1CBB355E008041F8 /* Build configuration list for PBXNativeTarget "GeneralConnect" */;
 			buildPhases = (
+				3385CDD4FB3B41714508420B /* Check Pods Manifest.lock */,
 				ACCE76F91CBB355E008041F8 /* Sources */,
 				ACCE76FA1CBB355E008041F8 /* Frameworks */,
 				ACCE76FB1CBB355E008041F8 /* Resources */,
+				3F1289F2BF94F5F8CA36F614 /* Embed Pods Frameworks */,
+				8FCDDB31B3B698DE6C0AD805 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -853,9 +930,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2038DF1CCE02DC0064E11E /* map.png in Resources */,
 				AC82D7691CC4D3D700DE5657 /* op.png in Resources */,
+				AC2038D51CCE015C0064E11E /* buxian.png in Resources */,
 				ACA9CFC41CCA18380025F0FC /* more.png in Resources */,
 				AC82D7901CC4EA3100DE5657 /* news2.png in Resources */,
+				AC2038CF1CCDBEA00064E11E /* RJSearchNoticeCell.xib in Resources */,
 				AC82D78C1CC4EA1000DE5657 /* mine2.png in Resources */,
 				ACCE77101CBB355E008041F8 /* LaunchScreen.storyboard in Resources */,
 				AC02ECEB1CC71555000156AF /* video.png in Resources */,
@@ -870,7 +950,9 @@
 				ACA356301CC5CDCE001F85A0 /* fatonggao.png in Resources */,
 				AC82D76D1CC4D68400DE5657 /* eye-1.png in Resources */,
 				AC82D7831CC4E9EB00DE5657 /* find.png in Resources */,
+				AC2038D81CCE02770064E11E /* mew.png in Resources */,
 				AC82D7621CC4CE0100DE5657 /* new.png in Resources */,
+				AC2038DB1CCE02AD0064E11E /* head.png in Resources */,
 				AC82D7671CC4CF7000DE5657 /* ForgetViewController.xib in Resources */,
 				ACA3562F1CC5CDCE001F85A0 /* fadongtai.png in Resources */,
 				AC82D78B1CC4EA1000DE5657 /* mine.png in Resources */,
@@ -885,10 +967,14 @@
 				ACCE770D1CBB355E008041F8 /* Assets.xcassets in Resources */,
 				AC82D7531CC4950200DE5657 /* log-in-2.png in Resources */,
 				AC82D78F1CC4EA3100DE5657 /* news.png in Resources */,
+				AC2038D31CCDFFF00064E11E /* weixin.png in Resources */,
 				AC82D75E1CC4C58F00DE5657 /* RegisterViewController.xib in Resources */,
+				AC2038D21CCDFFF00064E11E /* weibo.png in Resources */,
+				AC2038DE1CCE02DC0064E11E /* eye.png in Resources */,
 				ACA9CFD81CCA305E0025F0FC /* RJScrView.xib in Resources */,
 				ACA356271CC5C1D4001F85A0 /* wanghongquan.png in Resources */,
 				ACA356281CC5C1D4001F85A0 /* wanghongquan2.png in Resources */,
+				AC2038D91CCE02770064E11E /* time.png in Resources */,
 				AC82D76F1CC4DB8000DE5657 /* nav.png in Resources */,
 				AC02ECEF1CC7171A000156AF /* search.png in Resources */,
 				AC82D76B1CC4D49D00DE5657 /* eye.png in Resources */,
@@ -917,25 +1003,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3385CDD4FB3B41714508420B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F1289F2BF94F5F8CA36F614 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeneralConnect/Pods-GeneralConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FCDDB31B3B698DE6C0AD805 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeneralConnect/Pods-GeneralConnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACCE76F91CBB355E008041F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ACA356331CC5D1B0001F85A0 /* plusView.m in Sources */,
+				AC2038C71CCDBD580064E11E /* FindViewController.m in Sources */,
 				AC82D7331CC48BC800DE5657 /* NewViewController.m in Sources */,
 				AC82D7311CC48BC800DE5657 /* MessageViewController.m in Sources */,
 				AC82D7321CC48BC800DE5657 /* MineViewController.m in Sources */,
 				ACA9CFC61CCA18380025F0FC /* RJCity.m in Sources */,
 				ACA9CFC71CCA18380025F0FC /* RJHeaderView.m in Sources */,
 				AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */,
+				ACD3AC891CCB662300A287DC /* RJNetRequestTool.m in Sources */,
+				AC2038CE1CCDBEA00064E11E /* RJSearchNoticeCell.m in Sources */,
 				AC82D7661CC4CF7000DE5657 /* ForgetViewController.m in Sources */,
 				ACA9CFCA1CCA18380025F0FC /* RJTableViewCell.m in Sources */,
 				AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */,
 				AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */,
 				ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */,
 				AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */,
-				AC82D72C1CC48BC800DE5657 /* FindViewController.m in Sources */,
 				AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */,
 				ACA9CFC81CCA18380025F0FC /* RJProvince.m in Sources */,
 				ACA9CFCD1CCA25870025F0FC /* RJIntelligentView.m in Sources */,
@@ -944,6 +1080,7 @@
 				ACCE77021CBB355E008041F8 /* main.m in Sources */,
 				AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */,
 				AC82D7301CC48BC800DE5657 /* RJTarBarBtn.m in Sources */,
+				AC2038CA1CCDBE690064E11E /* RJSearchNoticeView.m in Sources */,
 				ACA9CFC91CCA18380025F0FC /* RJtableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1085,6 +1222,7 @@
 		};
 		ACCE772B1CBB355E008041F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF1B20F9749CC7DE18A36DE /* Pods-GeneralConnect.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -1099,6 +1237,7 @@
 		};
 		ACCE772C1CBB355E008041F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC66C406CF53C9402C427B26 /* Pods-GeneralConnect.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
