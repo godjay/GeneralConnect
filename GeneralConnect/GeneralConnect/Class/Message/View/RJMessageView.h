@@ -1,5 +1,5 @@
 //
-//  NewViewController.h
+//  RJMessageView.h
 //  GeneralConnect
 //
 //  Created by lirenjie on 16/4/25.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewViewController : UIViewController
+@interface RJMessageView : UIView
 
 @end

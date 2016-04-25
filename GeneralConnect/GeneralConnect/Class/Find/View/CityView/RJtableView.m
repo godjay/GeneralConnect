@@ -74,6 +74,7 @@ static NSString *const headerResuseIdentifier = @"headerResuseIdentifier";
     
     RJTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
     cell.textLabel.text = city.CityName;
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
     
     return cell;
 }

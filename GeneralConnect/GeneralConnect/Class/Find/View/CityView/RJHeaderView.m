@@ -42,6 +42,7 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         self.btn = btn;
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont systemFontOfSize:15];
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         btn.titleEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
         

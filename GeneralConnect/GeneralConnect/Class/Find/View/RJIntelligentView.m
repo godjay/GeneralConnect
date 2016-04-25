@@ -59,6 +59,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
     cell.textLabel.text = title;
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
     
     return cell;
 }
