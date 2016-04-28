@@ -33,6 +33,7 @@
     [super viewDidLoad];
     
     self.title = @"忘记密码";
+    _sureBtn.selected = YES;
     
     //创建导航栏左边按钮
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];

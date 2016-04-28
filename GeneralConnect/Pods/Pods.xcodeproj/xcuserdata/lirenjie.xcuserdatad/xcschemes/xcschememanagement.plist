@@ -14,10 +14,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>91B26CA43FE4BFF8F1DBCF4B6FA03919</key>
+		<key>2308135310E1024E36B2AC571373FE2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E136C34B241B04483FD9B0F8D2C46C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

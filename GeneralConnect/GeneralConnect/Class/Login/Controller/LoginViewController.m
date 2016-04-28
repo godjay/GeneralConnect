@@ -11,7 +11,6 @@
 #import "RegisterViewController.h"
 #import "RJNavViewController.h"
 #import "ForgetViewController.h"
-#import "RJNetRequestTool.h"
 
 @interface LoginViewController ()
 
@@ -41,28 +40,67 @@
     
     [super viewDidLoad];
     
+    _rememberBtn.selected = [[NSUserDefaults standardUserDefaults] boolForKey:@"isRememberPwd"];
+    if (_rememberBtn.selected == YES) {
+        _phoneNum.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"phoneNum"];
+        _pwd.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"pwd"];
+    }
 }
 
 //登录
 - (IBAction)loginAction {
-    /*
-    NSString *url = @"http://wanghong.ngrok.natapp.cn/v1/user/login";
-    NSDictionary *dic = @{
-                          @"LoginForm[username]" : @"18339927398",
-                          @"LoginForm[password]" : @"123456",
-                          @"LoginForm[verifyCode]" : @"222"
-                          };
     
-    [RJNetRequestTool PostWithURL:url params:dic success:^(id json) {
-        NSLog(@"0000000%@",json);
-    } failure:^(NSError *error) {
-        NSLog(@"111111%@",error);
+    if (_phoneNum.text.length != 0 && _pwd.text.length != 0) {
+        
+        if (_pwd.text.length >= 6) {
+            
+            [ProgressHUD show:@"正在登录.."];
+            self.view.userInteractionEnabled = NO;  // 用户不可交互
+            
+            NSString *urlStr = [NSString stringWithFormat:@"%@v1/user/login",apiBaseURL];
+            
+            NSDictionary *dic = @{
+                                  @"LoginForm[username]" : _phoneNum.text,
+                                  @"LoginForm[password]" : _pwd.text,
+                                  @"LoginForm[verifyCode]" : @"222"
+                                  };
+            
+            [RJNetRequestTool PostWithURL:urlStr params:dic success:^(id json) {
+                
+                NSLog(@"json %@",json);
+                /*
+                NSDictionary *data = json[@"data"];
+                NSLog(@"accessToken    :   %@",data[@"accessToken"]);  //获取accessToken
+                */
+                //记住密码
+                if (_rememberBtn.selected == YES) {
+                    [[NSUserDefaults standardUserDefaults] setObject:_phoneNum.text forKey:@"phoneNum"];
+                    [[NSUserDefaults standardUserDefaults] setObject:_pwd.text forKey:@"pwd"];
+                }else{
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"phoneNum"];
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"pwd"];
+                }
+                
+                [ProgressHUD dismiss];  //隐藏提示框
+                self.view.userInteractionEnabled = YES;  // 用户可以交互
 
-    }];
-    */
-    
-    RJTabBarController *mainTarBarVc = [[RJTabBarController alloc] init];
-    [UIApplication sharedApplication].keyWindow.rootViewController = mainTarBarVc;
+                //跳转控制器
+                RJTabBarController *mainTarBarVc = [[RJTabBarController alloc] init];
+                [UIApplication sharedApplication].keyWindow.rootViewController = mainTarBarVc;
+                
+            } failure:^(NSError *error) {
+                
+                self.view.userInteractionEnabled = YES;  // 用户可以交互
+                NSLog(@"error %@",error);
+                
+            }];
+        }else{
+            [ProgressHUD showError:@"密码最少6位哦~"];
+        }
+        
+    }else{
+        [ProgressHUD showError:@"手机号或密码不能为空！"];
+    }
     
 }
 
@@ -70,6 +108,8 @@
 - (IBAction)rememberPassWord {
     
     _rememberBtn.selected = !_rememberBtn.selected;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:_rememberBtn.selected forKey:@"isRememberPwd"];
     
 }
 

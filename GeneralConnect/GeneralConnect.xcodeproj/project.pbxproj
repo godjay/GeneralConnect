@@ -33,14 +33,24 @@
 		AC2038F21CCE14C40064E11E /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038F11CCE14C40064E11E /* list.png */; };
 		AC2038FB1CCE19300064E11E /* RJMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038FA1CCE19300064E11E /* RJMessageView.m */; };
 		AC2038FD1CCE19390064E11E /* RJMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2038FC1CCE19390064E11E /* RJMessageView.xib */; };
-		AC2039021CCE1B820064E11E /* news0.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038FF1CCE1B820064E11E /* news0.png */; };
-		AC2039031CCE1B820064E11E /* news1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2039001CCE1B820064E11E /* news1.png */; };
-		AC2039041CCE1B820064E11E /* news2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2039011CCE1B820064E11E /* news2.png */; };
+		AC2039021CCE1B820064E11E /* message0.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038FF1CCE1B820064E11E /* message0.png */; };
+		AC2039031CCE1B820064E11E /* message1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2039001CCE1B820064E11E /* message1.png */; };
+		AC2039041CCE1B820064E11E /* message2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2039011CCE1B820064E11E /* message2.png */; };
+		AC20A1051CD1A02000E5F58D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20A1041CD1A02000E5F58D /* MineViewController.m */; };
+		AC20A1081CD1A13100E5F58D /* RJMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20A1071CD1A13100E5F58D /* RJMineView.m */; };
+		AC20A10B1CD1A72E00E5F58D /* RJMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20A10A1CD1A72E00E5F58D /* RJMineHeaderView.m */; };
+		AC20A10D1CD1A73900E5F58D /* RJMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20A10C1CD1A73900E5F58D /* RJMineHeaderView.xib */; };
+		AC20A1131CD1AB4100E5F58D /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A1111CD1AB4100E5F58D /* man.png */; };
+		AC20A1141CD1AB4100E5F58D /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A1121CD1AB4100E5F58D /* woman.png */; };
+		AC20A1181CD1AD8400E5F58D /* news2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A1171CD1AD8400E5F58D /* news2.png */; };
+		AC20A11A1CD1AF0200E5F58D /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A1191CD1AF0200E5F58D /* chat.png */; };
+		AC20A11C1CD1B02D00E5F58D /* seting.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11B1CD1B02D00E5F58D /* seting.png */; };
+		AC20A11F1CD1B17700E5F58D /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11D1CD1B17700E5F58D /* call.png */; };
+		AC20A1201CD1B17700E5F58D /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11E1CD1B17700E5F58D /* weibo.png */; };
 		AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7091CC48BC800DE5657 /* RJNavViewController.m */; };
 		AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70B1CC48BC800DE5657 /* RJTabBarController.m */; };
 		AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70F1CC48BC800DE5657 /* RJTarBar.m */; };
 		AC82D7301CC48BC800DE5657 /* RJTarBarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7111CC48BC800DE5657 /* RJTarBarBtn.m */; };
-		AC82D7321CC48BC800DE5657 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D71B1CC48BC800DE5657 /* MineViewController.m */; };
 		AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7361CC48BD200DE5657 /* AppDelegate.m */; };
 		AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7451CC48FD100DE5657 /* LoginViewController.m */; };
 		AC82D7481CC48FD100DE5657 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC82D7461CC48FD100DE5657 /* LoginViewController.xib */; };
@@ -66,7 +76,6 @@
 		AC82D78B1CC4EA1000DE5657 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = AC82D7891CC4EA1000DE5657 /* mine.png */; };
 		AC82D78C1CC4EA1000DE5657 /* mine2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC82D78A1CC4EA1000DE5657 /* mine2.png */; };
 		AC82D78F1CC4EA3100DE5657 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = AC82D78D1CC4EA3100DE5657 /* news.png */; };
-		AC82D7901CC4EA3100DE5657 /* news2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC82D78E1CC4EA3100DE5657 /* news2.png */; };
 		AC9C35B41CC0EFE400246A11 /* 风骚之神.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC9C35B31CC0EFE400246A11 /* 风骚之神.mp4 */; };
 		ACA356271CC5C1D4001F85A0 /* wanghongquan.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA356251CC5C1D4001F85A0 /* wanghongquan.png */; };
 		ACA356281CC5C1D4001F85A0 /* wanghongquan2.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA356261CC5C1D4001F85A0 /* wanghongquan2.png */; };
@@ -156,9 +165,24 @@
 		AC2038F91CCE19300064E11E /* RJMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMessageView.h; sourceTree = "<group>"; };
 		AC2038FA1CCE19300064E11E /* RJMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJMessageView.m; sourceTree = "<group>"; };
 		AC2038FC1CCE19390064E11E /* RJMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJMessageView.xib; sourceTree = "<group>"; };
-		AC2038FF1CCE1B820064E11E /* news0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news0.png; sourceTree = "<group>"; };
-		AC2039001CCE1B820064E11E /* news1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news1.png; sourceTree = "<group>"; };
-		AC2039011CCE1B820064E11E /* news2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news2.png; sourceTree = "<group>"; };
+		AC2038FF1CCE1B820064E11E /* message0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message0.png; sourceTree = "<group>"; };
+		AC2039001CCE1B820064E11E /* message1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message1.png; sourceTree = "<group>"; };
+		AC2039011CCE1B820064E11E /* message2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message2.png; sourceTree = "<group>"; };
+		AC20A1031CD1A02000E5F58D /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		AC20A1041CD1A02000E5F58D /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		AC20A1061CD1A13100E5F58D /* RJMineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMineView.h; sourceTree = "<group>"; };
+		AC20A1071CD1A13100E5F58D /* RJMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJMineView.m; sourceTree = "<group>"; };
+		AC20A1091CD1A72E00E5F58D /* RJMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMineHeaderView.h; sourceTree = "<group>"; };
+		AC20A10A1CD1A72E00E5F58D /* RJMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJMineHeaderView.m; sourceTree = "<group>"; };
+		AC20A10C1CD1A73900E5F58D /* RJMineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJMineHeaderView.xib; sourceTree = "<group>"; };
+		AC20A1111CD1AB4100E5F58D /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
+		AC20A1121CD1AB4100E5F58D /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
+		AC20A1171CD1AD8400E5F58D /* news2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news2.png; sourceTree = "<group>"; };
+		AC20A1191CD1AF0200E5F58D /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		AC20A11B1CD1B02D00E5F58D /* seting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seting.png; sourceTree = "<group>"; };
+		AC20A11D1CD1B17700E5F58D /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		AC20A11E1CD1B17700E5F58D /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		AC20A1211CD1BD1800E5F58D /* RJPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPCH.pch; sourceTree = "<group>"; };
 		AC82D7081CC48BC800DE5657 /* RJNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNavViewController.h; sourceTree = "<group>"; };
 		AC82D7091CC48BC800DE5657 /* RJNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNavViewController.m; sourceTree = "<group>"; };
 		AC82D70A1CC48BC800DE5657 /* RJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTabBarController.h; sourceTree = "<group>"; };
@@ -167,8 +191,6 @@
 		AC82D70F1CC48BC800DE5657 /* RJTarBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJTarBar.m; sourceTree = "<group>"; };
 		AC82D7101CC48BC800DE5657 /* RJTarBarBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTarBarBtn.h; sourceTree = "<group>"; };
 		AC82D7111CC48BC800DE5657 /* RJTarBarBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJTarBarBtn.m; sourceTree = "<group>"; };
-		AC82D71A1CC48BC800DE5657 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		AC82D71B1CC48BC800DE5657 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		AC82D7351CC48BD200DE5657 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC82D7361CC48BD200DE5657 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AC82D7441CC48FD100DE5657 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -198,7 +220,6 @@
 		AC82D7891CC4EA1000DE5657 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
 		AC82D78A1CC4EA1000DE5657 /* mine2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine2.png; sourceTree = "<group>"; };
 		AC82D78D1CC4EA3100DE5657 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
-		AC82D78E1CC4EA3100DE5657 /* news2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news2.png; sourceTree = "<group>"; };
 		AC9C35B31CC0EFE400246A11 /* 风骚之神.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "风骚之神.mp4"; sourceTree = "<group>"; };
 		ACA356251CC5C1D4001F85A0 /* wanghongquan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanghongquan.png; sourceTree = "<group>"; };
 		ACA356261CC5C1D4001F85A0 /* wanghongquan2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanghongquan2.png; sourceTree = "<group>"; };
@@ -290,11 +311,25 @@
 		AC2038FE1CCE1B730064E11E /* 消息 */ = {
 			isa = PBXGroup;
 			children = (
-				AC2038FF1CCE1B820064E11E /* news0.png */,
-				AC2039001CCE1B820064E11E /* news1.png */,
-				AC2039011CCE1B820064E11E /* news2.png */,
+				AC2038FF1CCE1B820064E11E /* message0.png */,
+				AC2039001CCE1B820064E11E /* message1.png */,
+				AC2039011CCE1B820064E11E /* message2.png */,
 			);
 			name = "消息";
+			sourceTree = "<group>";
+		};
+		AC20A10E1CD1A7F100E5F58D /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				AC20A11D1CD1B17700E5F58D /* call.png */,
+				AC20A11E1CD1B17700E5F58D /* weibo.png */,
+				AC20A11B1CD1B02D00E5F58D /* seting.png */,
+				AC20A1191CD1AF0200E5F58D /* chat.png */,
+				AC20A1111CD1AB4100E5F58D /* man.png */,
+				AC20A1121CD1AB4100E5F58D /* woman.png */,
+			);
+			name = mine;
+			path = ../mine;
 			sourceTree = "<group>";
 		};
 		AC82D6F31CC48BC800DE5657 /* Class */ = {
@@ -553,8 +588,8 @@
 		AC82D7191CC48BC800DE5657 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC82D71A1CC48BC800DE5657 /* MineViewController.h */,
-				AC82D71B1CC48BC800DE5657 /* MineViewController.m */,
+				AC20A1031CD1A02000E5F58D /* MineViewController.h */,
+				AC20A1041CD1A02000E5F58D /* MineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -569,6 +604,11 @@
 		AC82D71D1CC48BC800DE5657 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC20A1061CD1A13100E5F58D /* RJMineView.h */,
+				AC20A1071CD1A13100E5F58D /* RJMineView.m */,
+				AC20A1091CD1A72E00E5F58D /* RJMineHeaderView.h */,
+				AC20A10A1CD1A72E00E5F58D /* RJMineHeaderView.m */,
+				AC20A10C1CD1A73900E5F58D /* RJMineHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -690,6 +730,7 @@
 				ACCE77111CBB355E008041F8 /* Info.plist */,
 				AC82D7351CC48BD200DE5657 /* AppDelegate.h */,
 				AC82D7361CC48BD200DE5657 /* AppDelegate.m */,
+				AC20A1211CD1BD1800E5F58D /* RJPCH.pch */,
 			);
 			name = Other;
 			path = Class/Other;
@@ -706,6 +747,7 @@
 		AC82D74A1CC4950200DE5657 /* imge */ = {
 			isa = PBXGroup;
 			children = (
+				AC20A10E1CD1A7F100E5F58D /* mine */,
 				AC2038F11CCE14C40064E11E /* list.png */,
 				AC2038DA1CCE02AD0064E11E /* head.png */,
 				AC2038FE1CCE1B730064E11E /* 消息 */,
@@ -738,6 +780,7 @@
 		AC82D7701CC4E07800DE5657 /* 按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				AC20A1171CD1AD8400E5F58D /* news2.png */,
 				AC2038DC1CCE02DC0064E11E /* eye.png */,
 				AC2038DD1CCE02DC0064E11E /* map.png */,
 				AC2038D61CCE02770064E11E /* mew.png */,
@@ -758,7 +801,6 @@
 				ACA356251CC5C1D4001F85A0 /* wanghongquan.png */,
 				ACA356261CC5C1D4001F85A0 /* wanghongquan2.png */,
 				AC82D78D1CC4EA3100DE5657 /* news.png */,
-				AC82D78E1CC4EA3100DE5657 /* news2.png */,
 				AC82D7891CC4EA1000DE5657 /* mine.png */,
 				AC82D78A1CC4EA1000DE5657 /* mine2.png */,
 				AC82D7811CC4E9EB00DE5657 /* find.png */,
@@ -972,34 +1014,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2038DF1CCE02DC0064E11E /* map.png in Resources */,
+				AC20A11A1CD1AF0200E5F58D /* chat.png in Resources */,
 				AC82D7691CC4D3D700DE5657 /* op.png in Resources */,
 				AC2038D51CCE015C0064E11E /* buxian.png in Resources */,
 				ACA9CFC41CCA18380025F0FC /* more.png in Resources */,
-				AC82D7901CC4EA3100DE5657 /* news2.png in Resources */,
 				AC2038CF1CCDBEA00064E11E /* RJSearchNoticeCell.xib in Resources */,
 				AC82D78C1CC4EA1000DE5657 /* mine2.png in Resources */,
+				AC20A10D1CD1A73900E5F58D /* RJMineHeaderView.xib in Resources */,
 				AC2038F21CCE14C40064E11E /* list.png in Resources */,
 				ACCE77101CBB355E008041F8 /* LaunchScreen.storyboard in Resources */,
 				AC02ECEB1CC71555000156AF /* video.png in Resources */,
 				ACA3562B1CC5C77A001F85A0 /* plus.png in Resources */,
 				AC82D7841CC4E9EB00DE5657 /* find2.png in Resources */,
 				ACA9CFC51CCA18380025F0FC /* Provineces.plist in Resources */,
+				AC20A1201CD1B17700E5F58D /* weibo.png in Resources */,
 				ACA356351CC5D1C3001F85A0 /* plusView.xib in Resources */,
 				ACA356381CC5E197001F85A0 /* ×.png in Resources */,
-				AC2039041CCE1B820064E11E /* news2.png in Resources */,
+				AC2039041CCE1B820064E11E /* message2.png in Resources */,
 				AC82D7571CC4950200DE5657 /* phone.png in Resources */,
 				AC2038FD1CCE19390064E11E /* RJMessageView.xib in Resources */,
 				AC82D7591CC4950200DE5657 /* select.png in Resources */,
 				AC82D7561CC4950200DE5657 /* mima.png in Resources */,
 				ACA356301CC5CDCE001F85A0 /* fatonggao.png in Resources */,
 				AC82D76D1CC4D68400DE5657 /* eye-1.png in Resources */,
-				AC2039031CCE1B820064E11E /* news1.png in Resources */,
+				AC2039031CCE1B820064E11E /* message1.png in Resources */,
 				AC82D7831CC4E9EB00DE5657 /* find.png in Resources */,
 				AC2038D81CCE02770064E11E /* mew.png in Resources */,
 				AC82D7621CC4CE0100DE5657 /* new.png in Resources */,
 				AC2038DB1CCE02AD0064E11E /* head.png in Resources */,
 				AC82D7671CC4CF7000DE5657 /* ForgetViewController.xib in Resources */,
 				ACA3562F1CC5CDCE001F85A0 /* fadongtai.png in Resources */,
+				AC20A1141CD1AB4100E5F58D /* woman.png in Resources */,
 				AC82D78B1CC4EA1000DE5657 /* mine.png in Resources */,
 				AC82D7541CC4950200DE5657 /* log-in.png in Resources */,
 				AC02ECF41CC7186E000156AF /* SearchViewController.xib in Resources */,
@@ -1013,24 +1058,28 @@
 				AC82D7531CC4950200DE5657 /* log-in-2.png in Resources */,
 				AC82D78F1CC4EA3100DE5657 /* news.png in Resources */,
 				AC2038D31CCDFFF00064E11E /* weixin.png in Resources */,
+				AC20A1181CD1AD8400E5F58D /* news2.png in Resources */,
 				AC82D75E1CC4C58F00DE5657 /* RegisterViewController.xib in Resources */,
 				AC2038D21CCDFFF00064E11E /* weibo.png in Resources */,
+				AC20A11C1CD1B02D00E5F58D /* seting.png in Resources */,
 				AC2038DE1CCE02DC0064E11E /* eye.png in Resources */,
 				ACA9CFD81CCA305E0025F0FC /* RJScrView.xib in Resources */,
 				ACA356271CC5C1D4001F85A0 /* wanghongquan.png in Resources */,
+				AC20A1131CD1AB4100E5F58D /* man.png in Resources */,
 				ACA356281CC5C1D4001F85A0 /* wanghongquan2.png in Resources */,
 				AC2038ED1CCE0F940064E11E /* textNewCell.xib in Resources */,
 				AC2038D91CCE02770064E11E /* time.png in Resources */,
 				AC82D76F1CC4DB8000DE5657 /* nav.png in Resources */,
 				AC02ECEF1CC7171A000156AF /* search.png in Resources */,
 				AC82D76B1CC4D49D00DE5657 /* eye.png in Resources */,
+				AC20A11F1CD1B17700E5F58D /* call.png in Resources */,
 				AC82D7551CC4950200DE5657 /* logo.png in Resources */,
 				ACA3562C1CC5C77A001F85A0 /* plus2.png in Resources */,
 				AC9C35B41CC0EFE400246A11 /* 风骚之神.mp4 in Resources */,
 				AC82D7481CC48FD100DE5657 /* LoginViewController.xib in Resources */,
 				AC02ECEA1CC71555000156AF /* pic.png in Resources */,
 				ACCE770B1CBB355E008041F8 /* Main.storyboard in Resources */,
-				AC2039021CCE1B820064E11E /* news0.png in Resources */,
+				AC2039021CCE1B820064E11E /* message0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,18 +1155,19 @@
 				ACA356331CC5D1B0001F85A0 /* plusView.m in Sources */,
 				AC2038E21CCE0EA30064E11E /* NewViewController.m in Sources */,
 				AC2038C71CCDBD580064E11E /* FindViewController.m in Sources */,
-				AC82D7321CC48BC800DE5657 /* MineViewController.m in Sources */,
 				ACA9CFC61CCA18380025F0FC /* RJCity.m in Sources */,
 				ACA9CFC71CCA18380025F0FC /* RJHeaderView.m in Sources */,
 				AC2038F01CCE14690064E11E /* MessageViewController.m in Sources */,
 				AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */,
 				ACD3AC891CCB662300A287DC /* RJNetRequestTool.m in Sources */,
+				AC20A1051CD1A02000E5F58D /* MineViewController.m in Sources */,
 				AC2038CE1CCDBEA00064E11E /* RJSearchNoticeCell.m in Sources */,
 				AC2038FB1CCE19300064E11E /* RJMessageView.m in Sources */,
 				AC82D7661CC4CF7000DE5657 /* ForgetViewController.m in Sources */,
 				ACA9CFCA1CCA18380025F0FC /* RJTableViewCell.m in Sources */,
 				AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */,
 				AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */,
+				AC20A1081CD1A13100E5F58D /* RJMineView.m in Sources */,
 				ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */,
 				AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */,
 				AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */,
@@ -1127,6 +1177,7 @@
 				AC82D75D1CC4C58F00DE5657 /* RegisterViewController.m in Sources */,
 				AC2038E81CCE0EFE0064E11E /* RJNewView.m in Sources */,
 				ACCE77021CBB355E008041F8 /* main.m in Sources */,
+				AC20A10B1CD1A72E00E5F58D /* RJMineHeaderView.m in Sources */,
 				AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */,
 				AC82D7301CC48BC800DE5657 /* RJTarBarBtn.m in Sources */,
 				AC2038CA1CCDBE690064E11E /* RJSearchNoticeView.m in Sources */,
@@ -1276,10 +1327,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "/Users/apple/Desktop/广义互联/GeneralConnect/GeneralConnect/Class/Other/RJPCH.pch";
 				INFOPLIST_FILE = GeneralConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = youchuang.com.GeneralConnect;
+				PRODUCT_BUNDLE_IDENTIFIER = youchuang.cn.GeneralConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1291,10 +1343,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "/Users/apple/Desktop/广义互联/GeneralConnect/GeneralConnect/Class/Other/RJPCH.pch";
 				INFOPLIST_FILE = GeneralConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = youchuang.com.GeneralConnect;
+				PRODUCT_BUNDLE_IDENTIFIER = youchuang.cn.GeneralConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

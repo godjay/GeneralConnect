@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 @property (weak, nonatomic) IBOutlet UIButton *chooseW;
 @property (weak, nonatomic) IBOutlet UIButton *chooseG;
+@property (assign, nonatomic) NSNumber *type;
+
 
 - (IBAction)sureAction;
 - (IBAction)getIfNum;
@@ -35,6 +37,7 @@
     [super viewDidLoad];
     
     self.title = @"注册";
+    _sureBtn.selected = YES;
     
     //创建导航栏左边按钮
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -62,6 +65,57 @@
 
 //注册
 - (IBAction)sureRegister {
+    
+    if (_phoneNum.text.length != 0 && _pwd.text.length != 0) {
+        
+        if (_pwd.text.length >= 6) {
+            
+            if (_type == nil) {
+                
+                [ProgressHUD showError:@"请选择您的身份哦~"];
+            }else{
+                
+                [ProgressHUD show:@"注册中.."];
+                NSString *urlStr = [NSString stringWithFormat:@"%@v1/users",apiBaseURL];
+                
+                NSDictionary *params = @{
+                                         @"password" : self.pwd.text,
+                                         @"username" : self.phoneNum.text,
+                                         @"type" : _type
+                                         };
+                
+                [RJNetRequestTool PostWithURL:urlStr params:params success:^(id json) {
+                    
+                    [ProgressHUD dismiss];
+                    NSLog(@"json    :   %@",json);
+
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        
+                        [ProgressHUD showSuccess:@"注册成功!"];
+
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                            
+                            [self leftBtnAction];
+
+                        });
+
+                    });
+                    
+                } failure:^(NSError *error) {
+                    
+                    NSLog(@"error    :   %@",error);
+                    
+                }];
+            }
+            
+        }else{
+            [ProgressHUD showError:@"密码最少6位哦"];
+        }
+        
+    }else{
+        [ProgressHUD showError:@"手机号或密码不能为空"];
+    }
+    
 }
 
 //选中网红身份
@@ -72,6 +126,13 @@
     if (_chooseG.selected == YES) {
         _chooseG.selected = NO;
     }
+    
+    if (_chooseW.selected == YES) {
+        _type = @0;
+    }else{
+        _type = nil;
+    }
+    
 }
 
 //选择广告商身份
@@ -81,6 +142,12 @@
     
     if (_chooseW.selected == YES) {
         _chooseW.selected = NO;
+    }
+    
+    if (_chooseG.selected == YES) {
+        _type = @1;
+    }else{
+        _type = nil;
     }
 }
 

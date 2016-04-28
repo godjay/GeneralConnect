@@ -14,7 +14,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi0-e7-93m">
                     <rect key="frame" x="0.0" y="80" width="375" height="80"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news1.png" translatesAutoresizingMaskIntoConstraints="NO" id="oDM-q7-8Iv">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="message1.png" translatesAutoresizingMaskIntoConstraints="NO" id="oDM-q7-8Iv">
                             <rect key="frame" x="8" y="20" width="40" height="40"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="系统消息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mei-Um-1Zu">
@@ -41,7 +41,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-LR-4jj">
                     <rect key="frame" x="0.0" y="160" width="375" height="80"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news0.png" translatesAutoresizingMaskIntoConstraints="NO" id="BqX-y6-Hia">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="message0.png" translatesAutoresizingMaskIntoConstraints="NO" id="BqX-y6-Hia">
                             <rect key="frame" x="8" y="20" width="40" height="40"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="历史聊天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-DN-B8R">
@@ -64,7 +64,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwZ-IZ-obw">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8E7-h7-k61">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="message2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8E7-h7-k61">
                             <rect key="frame" x="8" y="20" width="40" height="40"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="动态消息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEW-5O-8Aw">
@@ -106,8 +106,8 @@
         </view>
     </objects>
     <resources>
-        <image name="news0.png" width="59" height="59"/>
-        <image name="news1.png" width="59" height="59"/>
-        <image name="news2.png" width="59" height="59"/>
+        <image name="message0.png" width="59" height="59"/>
+        <image name="message1.png" width="59" height="59"/>
+        <image name="message2.png" width="59" height="59"/>
     </resources>
 </document>

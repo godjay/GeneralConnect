@@ -1,0 +1,18 @@
+//
+//  RJPCH.pch
+//  GeneralConnect
+//
+//  Created by lirenjie on 16/4/28.
+//  Copyright © 2016年 lirenjie. All rights reserved.
+//
+
+#ifndef RJPCH_pch
+#define RJPCH_pch
+
+#import <AFNetworking.h>
+#import "RJNetRequestTool.h"
+#import <ProgressHUD.h>
+
+#define apiBaseURL @"http://wanghong.ngrok.natapp.cn/"
+
+#endif /* RJPCH_pch */

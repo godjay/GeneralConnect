@@ -7,7 +7,6 @@
 //
 
 #import "RJNetRequestTool.h"
-#import <AFNetworking.h>
 
 @implementation RJNetRequestTool
 
