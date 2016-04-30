@@ -7,17 +7,30 @@
 //
 
 #import "RJSearchNoticeCell.h"
+#import "RJAdvertiser.h"
+#import "RJArea.h"
+
+@interface RJSearchNoticeCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *clickLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *areaLabel;
+
+
+@end
 
 @implementation RJSearchNoticeCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)layoutSubviews{
+    
+    _titleLabel.text = _tonggao.title;
+    
+    _totalLabel.text = [NSString stringWithFormat:@"%d",_tonggao.total_people];
+    _clickLabel.text = [NSString stringWithFormat:@"%d",_tonggao.click];
+    _nameLabel.text = _tonggao.advertisers.name;
+    _areaLabel.text = _tonggao.area.name;
 }
 
 @end

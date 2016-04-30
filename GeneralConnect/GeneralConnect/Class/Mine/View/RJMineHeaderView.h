@@ -10,4 +10,5 @@
 
 @interface RJMineHeaderView : UIView
 
+
 @end

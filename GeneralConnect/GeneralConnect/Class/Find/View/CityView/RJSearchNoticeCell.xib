@@ -132,7 +132,14 @@
                     <constraint firstItem="J3p-Gf-sTr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iea-rU-BQK"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="266.5" y="465"/>
+            <connections>
+                <outlet property="areaLabel" destination="ORZ-8R-pwr" id="DQq-Zh-HPg"/>
+                <outlet property="clickLabel" destination="6MW-RC-gQM" id="hmm-1q-lIl"/>
+                <outlet property="nameLabel" destination="jok-7N-u0s" id="woo-g2-ZkX"/>
+                <outlet property="titleLabel" destination="ovy-vc-C0U" id="Ue3-bH-jdm"/>
+                <outlet property="totalLabel" destination="CgY-Gl-PeE" id="GxS-Oi-lnJ"/>
+            </connections>
+            <point key="canvasLocation" x="191.5" y="451"/>
         </tableViewCell>
     </objects>
     <resources>

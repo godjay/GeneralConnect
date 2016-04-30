@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RJTonggao.h"
 
 @interface RJSearchNoticeCell : UITableViewCell
+
+@property (strong, nonatomic) RJTonggao *tonggao;
+
 
 @end

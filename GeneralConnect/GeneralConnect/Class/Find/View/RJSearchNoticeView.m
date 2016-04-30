@@ -8,10 +8,9 @@
 
 #import "RJSearchNoticeView.h"
 #import "RJSearchNoticeCell.h"
+#import "RJTonggao.h"
 
 @interface RJSearchNoticeView () <UITableViewDataSource,UITableViewDelegate>
-
-
 
 @end
 
@@ -31,19 +30,16 @@
     return self;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 15;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 1;
+    return self.tonggaoArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    RJTonggao *tonggao = self.tonggaoArray[indexPath.row];
     RJSearchNoticeCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
+    cell.tonggao = tonggao;
     
     return cell;
 }

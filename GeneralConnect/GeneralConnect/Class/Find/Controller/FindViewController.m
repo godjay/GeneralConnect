@@ -15,6 +15,7 @@
 #import "RJIntelligentView.h"
 #import "RJScrView.h"
 #import "RJSearchNoticeView.h"
+#import "RJTonggao.h"
 
 @interface FindViewController ()
 
@@ -34,9 +35,19 @@
 
 @property (weak, nonatomic) RJScrView *scrView;
 
+@property (strong, nonatomic) NSMutableArray *tonggaoArray;
+
+
 @end
 
 @implementation FindViewController
+
+- (NSMutableArray *)tonggaoArray{
+    if (_tonggaoArray == nil) {
+        _tonggaoArray = [NSMutableArray array];
+    }
+    return _tonggaoArray;
+}
 
 - (void)viewWillAppear:(BOOL)animated{
     
@@ -103,6 +114,9 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:247/255.0 alpha:1.0];
     
+    //请求通告数据
+    [self requestWFind];
+    
     //创建导航栏右搜索按钮
     [self setupSearchView];
     
@@ -112,21 +126,37 @@
     //创建加号视图
     [self setupPlusView];
     
-    //创建网红找通告视图
-    [self setupSearchNoticeView];
-    
     //接收通知，弹出加号视图或发动态控制器
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentTextPlus) name:@"presentPlus" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fireNew) name:@"fire" object:nil];
     
 }
 
+- (void)requestWFind{
+    
+    NSString *urlStr = [NSString stringWithFormat:@"%@v1/demands?expand=tags,advertisers,area",apiBaseURL];
+    
+    [RJNetRequestTool GetWithURL:urlStr params:nil success:^(id json) {
+        self.tonggaoArray = [RJTonggao mj_objectArrayWithKeyValuesArray:json];         //通告数组
+        NSLog(@"%@",json);
+        //创建网红找通告视图
+        [self setupSearchNoticeView];
+        
+    } failure:^(NSError *error) {
+        
+        NSLog(@"error  ---   %@",error);
+        
+    }];
+}
+
+
 //创建网红找通告视图
 - (void)setupSearchNoticeView{
     
-    RJSearchNoticeView *searchNoticeView = [[RJSearchNoticeView alloc] initWithFrame:CGRectMake(0, _screenView.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height - self.tabBarController.tabBar.bounds.size.height)];
-    [self.view addSubview:searchNoticeView];
+    RJSearchNoticeView *searchNoticeView = [[RJSearchNoticeView alloc] initWithFrame:CGRectMake(0, 104, self.view.bounds.size.width, self.view.bounds.size.height - self.tabBarController.tabBar.bounds.size.height - 104)];
+    searchNoticeView.tonggaoArray = _tonggaoArray;
     
+    [self.view addSubview:searchNoticeView];
 }
 
 //初始化加号视图

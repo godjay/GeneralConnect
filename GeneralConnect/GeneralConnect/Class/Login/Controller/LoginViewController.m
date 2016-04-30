@@ -49,7 +49,10 @@
 
 //登录
 - (IBAction)loginAction {
-    
+    //跳转控制器
+    RJTabBarController *mainTarBarVc = [[RJTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = mainTarBarVc;
+    /*
     if (_phoneNum.text.length != 0 && _pwd.text.length != 0) {
         
         if (_pwd.text.length >= 6) {
@@ -68,10 +71,10 @@
             [RJNetRequestTool PostWithURL:urlStr params:dic success:^(id json) {
                 
                 NSLog(@"json %@",json);
-                /*
-                NSDictionary *data = json[@"data"];
-                NSLog(@"accessToken    :   %@",data[@"accessToken"]);  //获取accessToken
-                */
+     
+//                NSDictionary *data = json[@"data"];
+//                NSLog(@"accessToken    :   %@",data[@"accessToken"]);  获取accessToken
+     
                 //记住密码
                 if (_rememberBtn.selected == YES) {
                     [[NSUserDefaults standardUserDefaults] setObject:_phoneNum.text forKey:@"phoneNum"];
@@ -87,9 +90,11 @@
                 //跳转控制器
                 RJTabBarController *mainTarBarVc = [[RJTabBarController alloc] init];
                 [UIApplication sharedApplication].keyWindow.rootViewController = mainTarBarVc;
-                
+     
             } failure:^(NSError *error) {
                 
+                [ProgressHUD dismiss];  //隐藏提示框
+                [ProgressHUD showError:@"登录失败！"];
                 self.view.userInteractionEnabled = YES;  // 用户可以交互
                 NSLog(@"error %@",error);
                 
@@ -101,7 +106,7 @@
     }else{
         [ProgressHUD showError:@"手机号或密码不能为空！"];
     }
-    
+    */
 }
 
 //记住密码

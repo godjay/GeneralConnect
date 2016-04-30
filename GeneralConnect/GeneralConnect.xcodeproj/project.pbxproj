@@ -13,6 +13,11 @@
 		AC02ECEF1CC7171A000156AF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECEE1CC7171A000156AF /* search.png */; };
 		AC02ECF31CC7186E000156AF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC02ECF11CC7186E000156AF /* SearchViewController.m */; };
 		AC02ECF41CC7186E000156AF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC02ECF21CC7186E000156AF /* SearchViewController.xib */; };
+		AC1639851CD48338003C02F4 /* YCSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1639821CD48338003C02F4 /* YCSettingGroup.m */; };
+		AC1639861CD48338003C02F4 /* YCSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1639841CD48338003C02F4 /* YCSettingItem.m */; };
+		AC16398C1CD486E8003C02F4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC16398B1CD486E8003C02F4 /* MineViewController.m */; };
+		AC16398F1CD48757003C02F4 /* RJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC16398E1CD48757003C02F4 /* RJSettingViewController.m */; };
+		AC1639921CD48AFF003C02F4 /* RJSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1639911CD48AFF003C02F4 /* RJSettingCell.m */; };
 		AC2038C71CCDBD580064E11E /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038C61CCDBD580064E11E /* FindViewController.m */; };
 		AC2038CA1CCDBE690064E11E /* RJSearchNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038C91CCDBE690064E11E /* RJSearchNoticeView.m */; };
 		AC2038CE1CCDBEA00064E11E /* RJSearchNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2038CC1CCDBEA00064E11E /* RJSearchNoticeCell.m */; };
@@ -36,7 +41,6 @@
 		AC2039021CCE1B820064E11E /* message0.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2038FF1CCE1B820064E11E /* message0.png */; };
 		AC2039031CCE1B820064E11E /* message1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2039001CCE1B820064E11E /* message1.png */; };
 		AC2039041CCE1B820064E11E /* message2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2039011CCE1B820064E11E /* message2.png */; };
-		AC20A1051CD1A02000E5F58D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20A1041CD1A02000E5F58D /* MineViewController.m */; };
 		AC20A1081CD1A13100E5F58D /* RJMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20A1071CD1A13100E5F58D /* RJMineView.m */; };
 		AC20A10B1CD1A72E00E5F58D /* RJMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20A10A1CD1A72E00E5F58D /* RJMineHeaderView.m */; };
 		AC20A10D1CD1A73900E5F58D /* RJMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20A10C1CD1A73900E5F58D /* RJMineHeaderView.xib */; };
@@ -46,7 +50,7 @@
 		AC20A11A1CD1AF0200E5F58D /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A1191CD1AF0200E5F58D /* chat.png */; };
 		AC20A11C1CD1B02D00E5F58D /* seting.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11B1CD1B02D00E5F58D /* seting.png */; };
 		AC20A11F1CD1B17700E5F58D /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11D1CD1B17700E5F58D /* call.png */; };
-		AC20A1201CD1B17700E5F58D /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11E1CD1B17700E5F58D /* weibo.png */; };
+		AC20A1201CD1B17700E5F58D /* myWeibo.png in Resources */ = {isa = PBXBuildFile; fileRef = AC20A11E1CD1B17700E5F58D /* myWeibo.png */; };
 		AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D7091CC48BC800DE5657 /* RJNavViewController.m */; };
 		AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70B1CC48BC800DE5657 /* RJTabBarController.m */; };
 		AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82D70F1CC48BC800DE5657 /* RJTarBar.m */; };
@@ -108,6 +112,9 @@
 		ACCE77261CBB355E008041F8 /* GeneralConnectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCE77251CBB355E008041F8 /* GeneralConnectUITests.m */; };
 		ACCE77431CBB56C8008041F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCE77421CBB56C8008041F8 /* Images.xcassets */; };
 		ACD3AC891CCB662300A287DC /* RJNetRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3AC881CCB662300A287DC /* RJNetRequestTool.m */; };
+		ACEBC19D1CD33C45008A103D /* RJTonggao.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBC19C1CD33C45008A103D /* RJTonggao.m */; };
+		ACEBC1A11CD33C76008A103D /* RJAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBC1A01CD33C76008A103D /* RJAdvertiser.m */; };
+		ACEBC1A41CD36BBB008A103D /* RJArea.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBC1A31CD36BBB008A103D /* RJArea.m */; };
 		DA555B5C7B1CE46608280D5E /* libPods-GeneralConnect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE1E57D919435CCDA57E5E6 /* libPods-GeneralConnect.a */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +144,16 @@
 		AC02ECF01CC7186E000156AF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		AC02ECF11CC7186E000156AF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		AC02ECF21CC7186E000156AF /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		AC1639811CD48338003C02F4 /* YCSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSettingGroup.h; sourceTree = "<group>"; };
+		AC1639821CD48338003C02F4 /* YCSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSettingGroup.m; sourceTree = "<group>"; };
+		AC1639831CD48338003C02F4 /* YCSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSettingItem.h; sourceTree = "<group>"; };
+		AC1639841CD48338003C02F4 /* YCSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSettingItem.m; sourceTree = "<group>"; };
+		AC16398A1CD486E8003C02F4 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		AC16398B1CD486E8003C02F4 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		AC16398D1CD48757003C02F4 /* RJSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSettingViewController.h; sourceTree = "<group>"; };
+		AC16398E1CD48757003C02F4 /* RJSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJSettingViewController.m; sourceTree = "<group>"; };
+		AC1639901CD48AFF003C02F4 /* RJSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSettingCell.h; sourceTree = "<group>"; };
+		AC1639911CD48AFF003C02F4 /* RJSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJSettingCell.m; sourceTree = "<group>"; };
 		AC2038C51CCDBD580064E11E /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		AC2038C61CCDBD580064E11E /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
 		AC2038C81CCDBE690064E11E /* RJSearchNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSearchNoticeView.h; sourceTree = "<group>"; };
@@ -168,8 +185,6 @@
 		AC2038FF1CCE1B820064E11E /* message0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message0.png; sourceTree = "<group>"; };
 		AC2039001CCE1B820064E11E /* message1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message1.png; sourceTree = "<group>"; };
 		AC2039011CCE1B820064E11E /* message2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message2.png; sourceTree = "<group>"; };
-		AC20A1031CD1A02000E5F58D /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		AC20A1041CD1A02000E5F58D /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		AC20A1061CD1A13100E5F58D /* RJMineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMineView.h; sourceTree = "<group>"; };
 		AC20A1071CD1A13100E5F58D /* RJMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJMineView.m; sourceTree = "<group>"; };
 		AC20A1091CD1A72E00E5F58D /* RJMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMineHeaderView.h; sourceTree = "<group>"; };
@@ -181,7 +196,7 @@
 		AC20A1191CD1AF0200E5F58D /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		AC20A11B1CD1B02D00E5F58D /* seting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seting.png; sourceTree = "<group>"; };
 		AC20A11D1CD1B17700E5F58D /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
-		AC20A11E1CD1B17700E5F58D /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		AC20A11E1CD1B17700E5F58D /* myWeibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myWeibo.png; sourceTree = "<group>"; };
 		AC20A1211CD1BD1800E5F58D /* RJPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPCH.pch; sourceTree = "<group>"; };
 		AC82D7081CC48BC800DE5657 /* RJNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNavViewController.h; sourceTree = "<group>"; };
 		AC82D7091CC48BC800DE5657 /* RJNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNavViewController.m; sourceTree = "<group>"; };
@@ -268,6 +283,12 @@
 		ACCE77421CBB56C8008041F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ACD3AC871CCB662300A287DC /* RJNetRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNetRequestTool.h; sourceTree = "<group>"; };
 		ACD3AC881CCB662300A287DC /* RJNetRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNetRequestTool.m; sourceTree = "<group>"; };
+		ACEBC19B1CD33C45008A103D /* RJTonggao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTonggao.h; sourceTree = "<group>"; };
+		ACEBC19C1CD33C45008A103D /* RJTonggao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJTonggao.m; sourceTree = "<group>"; };
+		ACEBC19F1CD33C76008A103D /* RJAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJAdvertiser.h; sourceTree = "<group>"; };
+		ACEBC1A01CD33C76008A103D /* RJAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJAdvertiser.m; sourceTree = "<group>"; };
+		ACEBC1A21CD36BBB008A103D /* RJArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJArea.h; sourceTree = "<group>"; };
+		ACEBC1A31CD36BBB008A103D /* RJArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJArea.m; sourceTree = "<group>"; };
 		DC66C406CF53C9402C427B26 /* Pods-GeneralConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeneralConnect/Pods-GeneralConnect.release.xcconfig"; sourceTree = "<group>"; };
 		FBE1E57D919435CCDA57E5E6 /* libPods-GeneralConnect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeneralConnect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -322,7 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				AC20A11D1CD1B17700E5F58D /* call.png */,
-				AC20A11E1CD1B17700E5F58D /* weibo.png */,
+				AC20A11E1CD1B17700E5F58D /* myWeibo.png */,
 				AC20A11B1CD1B02D00E5F58D /* seting.png */,
 				AC20A1191CD1AF0200E5F58D /* chat.png */,
 				AC20A1111CD1AB4100E5F58D /* man.png */,
@@ -353,6 +374,7 @@
 		AC82D6F41CC48BC800DE5657 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				ACEBC19A1CD33C45008A103D /* Model */,
 				AC82D6F51CC48BC800DE5657 /* Controller */,
 				AC82D6F91CC48BC800DE5657 /* View */,
 			);
@@ -364,17 +386,8 @@
 			children = (
 				AC2038C51CCDBD580064E11E /* FindViewController.h */,
 				AC2038C61CCDBD580064E11E /* FindViewController.m */,
-				AC82D6F81CC48BC800DE5657 /* Model */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		AC82D6F81CC48BC800DE5657 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			path = ../Model;
 			sourceTree = "<group>";
 		};
 		AC82D6F91CC48BC800DE5657 /* View */ = {
@@ -500,8 +513,8 @@
 		AC82D7061CC48BC800DE5657 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ACEBC19E1CD33C76008A103D /* Model */,
 				AC82D7071CC48BC800DE5657 /* Controller */,
-				AC82D70C1CC48BC800DE5657 /* Model */,
 				AC82D70D1CC48BC800DE5657 /* View */,
 			);
 			path = Main;
@@ -516,13 +529,6 @@
 				AC82D70B1CC48BC800DE5657 /* RJTabBarController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		AC82D70C1CC48BC800DE5657 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		AC82D70D1CC48BC800DE5657 /* View */ = {
@@ -588,8 +594,10 @@
 		AC82D7191CC48BC800DE5657 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC20A1031CD1A02000E5F58D /* MineViewController.h */,
-				AC20A1041CD1A02000E5F58D /* MineViewController.m */,
+				AC16398A1CD486E8003C02F4 /* MineViewController.h */,
+				AC16398B1CD486E8003C02F4 /* MineViewController.m */,
+				AC16398D1CD48757003C02F4 /* RJSettingViewController.h */,
+				AC16398E1CD48757003C02F4 /* RJSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -604,11 +612,17 @@
 		AC82D71D1CC48BC800DE5657 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC1639811CD48338003C02F4 /* YCSettingGroup.h */,
+				AC1639821CD48338003C02F4 /* YCSettingGroup.m */,
+				AC1639831CD48338003C02F4 /* YCSettingItem.h */,
+				AC1639841CD48338003C02F4 /* YCSettingItem.m */,
 				AC20A1061CD1A13100E5F58D /* RJMineView.h */,
 				AC20A1071CD1A13100E5F58D /* RJMineView.m */,
 				AC20A1091CD1A72E00E5F58D /* RJMineHeaderView.h */,
 				AC20A10A1CD1A72E00E5F58D /* RJMineHeaderView.m */,
 				AC20A10C1CD1A73900E5F58D /* RJMineHeaderView.xib */,
+				AC1639901CD48AFF003C02F4 /* RJSettingCell.h */,
+				AC1639911CD48AFF003C02F4 /* RJSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -898,6 +912,26 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		ACEBC19A1CD33C45008A103D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACEBC19B1CD33C45008A103D /* RJTonggao.h */,
+				ACEBC19C1CD33C45008A103D /* RJTonggao.m */,
+				ACEBC1A21CD36BBB008A103D /* RJArea.h */,
+				ACEBC1A31CD36BBB008A103D /* RJArea.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACEBC19E1CD33C76008A103D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACEBC19F1CD33C76008A103D /* RJAdvertiser.h */,
+				ACEBC1A01CD33C76008A103D /* RJAdvertiser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BC5F2BA72F0CC19F74779E7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,7 +1061,7 @@
 				ACA3562B1CC5C77A001F85A0 /* plus.png in Resources */,
 				AC82D7841CC4E9EB00DE5657 /* find2.png in Resources */,
 				ACA9CFC51CCA18380025F0FC /* Provineces.plist in Resources */,
-				AC20A1201CD1B17700E5F58D /* weibo.png in Resources */,
+				AC20A1201CD1B17700E5F58D /* myWeibo.png in Resources */,
 				ACA356351CC5D1C3001F85A0 /* plusView.xib in Resources */,
 				ACA356381CC5E197001F85A0 /* ×.png in Resources */,
 				AC2039041CCE1B820064E11E /* message2.png in Resources */,
@@ -1152,15 +1186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC16398F1CD48757003C02F4 /* RJSettingViewController.m in Sources */,
 				ACA356331CC5D1B0001F85A0 /* plusView.m in Sources */,
 				AC2038E21CCE0EA30064E11E /* NewViewController.m in Sources */,
 				AC2038C71CCDBD580064E11E /* FindViewController.m in Sources */,
 				ACA9CFC61CCA18380025F0FC /* RJCity.m in Sources */,
 				ACA9CFC71CCA18380025F0FC /* RJHeaderView.m in Sources */,
 				AC2038F01CCE14690064E11E /* MessageViewController.m in Sources */,
+				AC16398C1CD486E8003C02F4 /* MineViewController.m in Sources */,
 				AC82D73C1CC48BD200DE5657 /* AppDelegate.m in Sources */,
 				ACD3AC891CCB662300A287DC /* RJNetRequestTool.m in Sources */,
-				AC20A1051CD1A02000E5F58D /* MineViewController.m in Sources */,
+				AC1639921CD48AFF003C02F4 /* RJSettingCell.m in Sources */,
 				AC2038CE1CCDBEA00064E11E /* RJSearchNoticeCell.m in Sources */,
 				AC2038FB1CCE19300064E11E /* RJMessageView.m in Sources */,
 				AC82D7661CC4CF7000DE5657 /* ForgetViewController.m in Sources */,
@@ -1169,6 +1205,7 @@
 				AC82D72E1CC48BC800DE5657 /* RJTabBarController.m in Sources */,
 				AC20A1081CD1A13100E5F58D /* RJMineView.m in Sources */,
 				ACA356411CC61A70001F85A0 /* FireViewController.m in Sources */,
+				ACEBC19D1CD33C45008A103D /* RJTonggao.m in Sources */,
 				AC82D72D1CC48BC800DE5657 /* RJNavViewController.m in Sources */,
 				AC82D7471CC48FD100DE5657 /* LoginViewController.m in Sources */,
 				ACA9CFC81CCA18380025F0FC /* RJProvince.m in Sources */,
@@ -1176,13 +1213,17 @@
 				ACA9CFD61CCA30520025F0FC /* RJScrView.m in Sources */,
 				AC82D75D1CC4C58F00DE5657 /* RegisterViewController.m in Sources */,
 				AC2038E81CCE0EFE0064E11E /* RJNewView.m in Sources */,
+				AC1639851CD48338003C02F4 /* YCSettingGroup.m in Sources */,
+				AC1639861CD48338003C02F4 /* YCSettingItem.m in Sources */,
 				ACCE77021CBB355E008041F8 /* main.m in Sources */,
 				AC20A10B1CD1A72E00E5F58D /* RJMineHeaderView.m in Sources */,
 				AC82D72F1CC48BC800DE5657 /* RJTarBar.m in Sources */,
+				ACEBC1A41CD36BBB008A103D /* RJArea.m in Sources */,
 				AC82D7301CC48BC800DE5657 /* RJTarBarBtn.m in Sources */,
 				AC2038CA1CCDBE690064E11E /* RJSearchNoticeView.m in Sources */,
 				ACA9CFC91CCA18380025F0FC /* RJtableView.m in Sources */,
 				AC2038EC1CCE0F940064E11E /* textNewCell.m in Sources */,
+				ACEBC1A11CD33C76008A103D /* RJAdvertiser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

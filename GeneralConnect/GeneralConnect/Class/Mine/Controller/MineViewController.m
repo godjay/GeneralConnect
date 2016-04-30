@@ -8,12 +8,15 @@
 
 #import "MineViewController.h"
 #import "RJMineView.h"
+#import "RJSettingViewController.h"
+#import "RJNavViewController.h"
 
 @interface MineViewController ()
 
 @end
 
 @implementation MineViewController
+
 
 - (void)viewDidLoad {
     
@@ -23,6 +26,8 @@
     self.navigationController.navigationBarHidden = YES;
     
     [self setupMineView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentSettingVc) name:@"presentSettingVc" object:nil];
 }
 
 - (void)setupMineView{
@@ -31,5 +36,14 @@
     
     [self.view addSubview:mineView];
 }
+
+- (void)presentSettingVc{
+    
+    RJSettingViewController *settingVc = [[RJSettingViewController alloc] initWithStyle:UITableViewStylePlain];
+    RJNavViewController *nav = [[RJNavViewController alloc] initWithRootViewController:settingVc];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
 
 @end

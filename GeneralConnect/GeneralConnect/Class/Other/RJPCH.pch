@@ -12,7 +12,11 @@
 #import <AFNetworking.h>
 #import "RJNetRequestTool.h"
 #import <ProgressHUD.h>
+#import <MJExtension.h>
 
 #define apiBaseURL @"http://wanghong.ngrok.natapp.cn/"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #endif /* RJPCH_pch */

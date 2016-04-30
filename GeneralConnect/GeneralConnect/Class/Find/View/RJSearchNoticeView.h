@@ -10,4 +10,7 @@
 
 @interface RJSearchNoticeView : UITableView
 
+@property (strong, nonatomic) NSMutableArray *tonggaoArray;
+
+
 @end

@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHu-8o-0MP">
-                    <rect key="frame" x="335" y="40" width="22" height="20"/>
+                    <rect key="frame" x="335" y="40" width="20" height="18"/>
                     <state key="normal" image="seting.png"/>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZ3-90-3e0">
@@ -101,7 +101,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weibo.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIB-Cz-BUs">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myWeibo.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIB-Cz-BUs">
                             <rect key="frame" x="0.0" y="4" width="125" height="18"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx8-GZ-JYc">
@@ -122,6 +122,9 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="settingBtn" destination="RHu-8o-0MP" id="4T2-KM-gnI"/>
+            </connections>
             <point key="canvasLocation" x="286.5" y="272"/>
         </view>
     </objects>
@@ -130,7 +133,7 @@
         <image name="chat.png" width="70" height="70"/>
         <image name="head.png" width="193" height="193"/>
         <image name="man.png" width="13" height="13"/>
+        <image name="myWeibo.png" width="30" height="26"/>
         <image name="seting.png" width="32" height="32"/>
-        <image name="weibo.png" width="30" height="26"/>
     </resources>
 </document>
